@@ -61,11 +61,11 @@
                 
             </li>
                     <li>
-                <a href="namespaces/src-config.html">Config</a>
+                <a href="namespaces/src-core.html">Core</a>
                 
             </li>
                     <li>
-                <a href="namespaces/src-core.html">Core</a>
+                <a href="namespaces/src-init.html">Init</a>
                 
             </li>
             </ul>
@@ -114,7 +114,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">6</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -561,7 +561,7 @@ instantiated object from within another class.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Src-Core-MysqliDb.html#method_getOne">getOne()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|<a href="classes/Src-Core-MysqliDb.html"><abbr title="\Src\Core\MysqliDb">MysqliDb</abbr></a>    </span>
 </dt>
 <dd>A convenient SELECT * function to get one record.</dd>
 
@@ -962,7 +962,7 @@ its SQL part of the query according to operator in &#039; $operator ?&#039; or
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Src-Core-MysqliDb.html#method__buildQuery">_buildQuery()</a>
     <span>
-                        &nbsp;: <abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr>|bool    </span>
+                        &nbsp;: <abbr title="\mysqli_stmt">mysqli_stmt</abbr>|bool|mixed    </span>
 </dt>
 <dd>Abstraction method that will compile the WHERE statement,
 any passed update data, and the desired rows.</dd>
@@ -986,7 +986,7 @@ the data type of the field to be bound with &quot;i&quot; s&quot;, etc.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Src-Core-MysqliDb.html#method__prepareQuery">_prepareQuery()</a>
     <span>
-                        &nbsp;: <abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr>    </span>
+                        &nbsp;: <abbr title="\mysqli_stmt">mysqli_stmt</abbr>    </span>
 </dt>
 <dd>Method attempts to prepare the SQL query
 and throws an error if there was a problem.</dd>
@@ -1036,7 +1036,7 @@ and throws an error if there was a problem.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Src-Core-MysqliDb.html#method_queryUnprepared">queryUnprepared()</a>
     <span>
-                        &nbsp;: bool|<abbr title="\Src\Core\mysqli_result">mysqli_result</abbr>    </span>
+                        &nbsp;: bool|<abbr title="\mysqli_result">mysqli_result</abbr>    </span>
 </dt>
 <dd>Pushes a unprepared statement to the mysqli stack.</dd>
 
@@ -1068,7 +1068,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -1102,7 +1102,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -1135,7 +1135,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
     </aside>
 
@@ -1169,7 +1169,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1202,7 +1202,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -1235,7 +1235,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -1269,7 +1269,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1302,7 +1302,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -1335,7 +1335,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1369,7 +1369,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1402,7 +1402,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -1435,7 +1435,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -1468,7 +1468,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -1501,7 +1501,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -1534,7 +1534,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -1567,7 +1567,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1600,7 +1600,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -1633,7 +1633,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1666,7 +1666,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1699,7 +1699,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -1732,7 +1732,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -1765,7 +1765,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -1798,7 +1798,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1831,7 +1831,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -1864,7 +1864,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1897,7 +1897,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1930,7 +1930,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -1963,7 +1963,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1996,7 +1996,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -2029,7 +2029,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -2063,7 +2063,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -2096,7 +2096,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -2129,7 +2129,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2163,7 +2163,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -2197,7 +2197,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -2230,7 +2230,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -2264,7 +2264,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -2298,7 +2298,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
@@ -2332,7 +2332,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -2369,7 +2369,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -2453,7 +2453,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1818</span>
+    <span class="phpdocumentor-element-found-in__line">1823</span>
 
     </aside>
 
@@ -2501,7 +2501,7 @@ and throws an error if there was a problem.</dd>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2526,7 +2526,7 @@ and throws an error if there was a problem.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2412</span>
+    <span class="phpdocumentor-element-found-in__line">2417</span>
 
     </aside>
 
@@ -2549,7 +2549,7 @@ atomic operations sane.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2583,7 +2583,7 @@ atomic operations sane.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">383</span>
+    <span class="phpdocumentor-element-found-in__line">388</span>
 
     </aside>
 
@@ -2633,7 +2633,7 @@ atomic operations sane.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">499</span>
+    <span class="phpdocumentor-element-found-in__line">504</span>
 
     </aside>
 
@@ -2667,7 +2667,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2380</span>
+    <span class="phpdocumentor-element-found-in__line">2385</span>
 
     </aside>
 
@@ -2689,7 +2689,7 @@ Added for consistency as that&#039;s default output type</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2732,7 +2732,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -2764,7 +2764,7 @@ Added for consistency as that&#039;s default output type</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2789,7 +2789,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">345</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -2821,7 +2821,7 @@ Added for consistency as that&#039;s default output type</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2846,7 +2846,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2348</span>
+    <span class="phpdocumentor-element-found-in__line">2353</span>
 
     </aside>
 
@@ -2881,7 +2881,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2289</span>
+    <span class="phpdocumentor-element-found-in__line">2294</span>
 
     </aside>
 
@@ -2915,7 +2915,7 @@ Added for consistency as that&#039;s default output type</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -2940,7 +2940,7 @@ Added for consistency as that&#039;s default output type</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">971</span>
+    <span class="phpdocumentor-element-found-in__line">976</span>
 
     </aside>
 
@@ -2984,7 +2984,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3011,7 +3011,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">365</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -3069,7 +3069,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">330</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -3090,7 +3090,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3115,7 +3115,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1477</span>
+    <span class="phpdocumentor-element-found-in__line">1482</span>
 
     </aside>
 
@@ -3149,7 +3149,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3176,7 +3176,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2318</span>
+    <span class="phpdocumentor-element-found-in__line">2323</span>
 
     </aside>
 
@@ -3228,7 +3228,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">757</span>
+    <span class="phpdocumentor-element-found-in__line">762</span>
 
     </aside>
 
@@ -3281,7 +3281,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3308,7 +3308,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1464</span>
+    <span class="phpdocumentor-element-found-in__line">1469</span>
 
     </aside>
 
@@ -3330,7 +3330,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3357,7 +3357,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
     </aside>
 
@@ -3410,7 +3410,7 @@ instantiated object from within another class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2168</span>
+    <span class="phpdocumentor-element-found-in__line">2173</span>
 
     </aside>
 
@@ -3443,7 +3443,7 @@ instantiated object from within another class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2154</span>
+    <span class="phpdocumentor-element-found-in__line">2159</span>
 
     </aside>
 
@@ -3465,7 +3465,7 @@ instantiated object from within another class.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3490,7 +3490,7 @@ instantiated object from within another class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2143</span>
+    <span class="phpdocumentor-element-found-in__line">2148</span>
 
     </aside>
 
@@ -3523,7 +3523,7 @@ instantiated object from within another class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">796</span>
+    <span class="phpdocumentor-element-found-in__line">801</span>
 
     </aside>
 
@@ -3531,7 +3531,7 @@ instantiated object from within another class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getOne</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;*&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getOne</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;*&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/Src-Core-MysqliDb.html"><abbr title="\Src\Core\MysqliDb">MysqliDb</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3566,14 +3566,14 @@ instantiated object from within another class.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/Src-Core-MysqliDb.html"><abbr title="\Src\Core\MysqliDb">MysqliDb</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"><p>Contains the returned rows from the select query.</p>
 </section>
@@ -3593,7 +3593,7 @@ instantiated object from within another class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2179</span>
+    <span class="phpdocumentor-element-found-in__line">2184</span>
 
     </aside>
 
@@ -3627,7 +3627,7 @@ after get() and getAll()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">821</span>
+    <span class="phpdocumentor-element-found-in__line">826</span>
 
     </aside>
 
@@ -3679,7 +3679,7 @@ after get() and getAll()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3706,7 +3706,7 @@ after get() and getAll()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1333</span>
+    <span class="phpdocumentor-element-found-in__line">1338</span>
 
     </aside>
 
@@ -3766,7 +3766,7 @@ after get() and getAll()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">926</span>
+    <span class="phpdocumentor-element-found-in__line">931</span>
 
     </aside>
 
@@ -3801,7 +3801,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3826,7 +3826,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1070</span>
+    <span class="phpdocumentor-element-found-in__line">1075</span>
 
     </aside>
 
@@ -3911,7 +3911,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2272</span>
+    <span class="phpdocumentor-element-found-in__line">2277</span>
 
     </aside>
 
@@ -3945,7 +3945,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -3970,7 +3970,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">854</span>
+    <span class="phpdocumentor-element-found-in__line">859</span>
 
     </aside>
 
@@ -4013,7 +4013,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4040,7 +4040,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">869</span>
+    <span class="phpdocumentor-element-found-in__line">874</span>
 
     </aside>
 
@@ -4092,7 +4092,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4119,7 +4119,7 @@ satisfy the where condition specified calling the &quot;where&quot; method befor
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2210</span>
+    <span class="phpdocumentor-element-found-in__line">2215</span>
 
     </aside>
 
@@ -4165,7 +4165,7 @@ Default null;</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4190,7 +4190,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1120</span>
+    <span class="phpdocumentor-element-found-in__line">1125</span>
 
     </aside>
 
@@ -4242,7 +4242,7 @@ Default null;</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4276,7 +4276,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2557</span>
+    <span class="phpdocumentor-element-found-in__line">2562</span>
 
     </aside>
 
@@ -4369,7 +4369,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2533</span>
+    <span class="phpdocumentor-element-found-in__line">2538</span>
 
     </aside>
 
@@ -4461,7 +4461,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">491</span>
 
     </aside>
 
@@ -4494,7 +4494,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1164</span>
+    <span class="phpdocumentor-element-found-in__line">1169</span>
 
     </aside>
 
@@ -4556,7 +4556,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4581,7 +4581,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1235</span>
+    <span class="phpdocumentor-element-found-in__line">1240</span>
 
     </aside>
 
@@ -4644,7 +4644,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4671,7 +4671,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1380</span>
+    <span class="phpdocumentor-element-found-in__line">1385</span>
 
     </aside>
 
@@ -4714,7 +4714,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4741,7 +4741,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2488</span>
+    <span class="phpdocumentor-element-found-in__line">2493</span>
 
     </aside>
 
@@ -4788,7 +4788,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">418</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -4810,7 +4810,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4835,7 +4835,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2305</span>
+    <span class="phpdocumentor-element-found-in__line">2310</span>
 
     </aside>
 
@@ -4880,7 +4880,7 @@ Please check out http://dev.mysql.com/doc/refman/5.7/en/load-data.html for a val
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2259</span>
+    <span class="phpdocumentor-element-found-in__line">2264</span>
 
     </aside>
 
@@ -4926,7 +4926,7 @@ Default null;</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -4951,7 +4951,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">511</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -4984,7 +4984,7 @@ Default null;</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1032</span>
+    <span class="phpdocumentor-element-found-in__line">1037</span>
 
     </aside>
 
@@ -5039,7 +5039,7 @@ autoincrement column</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1290</span>
+    <span class="phpdocumentor-element-found-in__line">1295</span>
 
     </aside>
 
@@ -5089,7 +5089,7 @@ autoincrement column</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5123,7 +5123,7 @@ autoincrement column</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1103</span>
+    <span class="phpdocumentor-element-found-in__line">1108</span>
 
     </aside>
 
@@ -5201,7 +5201,7 @@ autoincrement column</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1051</span>
+    <span class="phpdocumentor-element-found-in__line">1056</span>
 
     </aside>
 
@@ -5279,7 +5279,7 @@ autoincrement column</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2507</span>
+    <span class="phpdocumentor-element-found-in__line">2512</span>
 
     </aside>
 
@@ -5340,7 +5340,7 @@ autoincrement column</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5365,7 +5365,7 @@ autoincrement column</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1491</span>
+    <span class="phpdocumentor-element-found-in__line">1496</span>
 
     </aside>
 
@@ -5390,7 +5390,7 @@ since _mysqli is protected.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5417,7 +5417,7 @@ since _mysqli is protected.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">664</span>
+    <span class="phpdocumentor-element-found-in__line">669</span>
 
     </aside>
 
@@ -5460,7 +5460,7 @@ since _mysqli is protected.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5487,7 +5487,7 @@ since _mysqli is protected.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">573</span>
+    <span class="phpdocumentor-element-found-in__line">578</span>
 
     </aside>
 
@@ -5530,7 +5530,7 @@ since _mysqli is protected.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5557,7 +5557,7 @@ since _mysqli is protected.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">613</span>
+    <span class="phpdocumentor-element-found-in__line">618</span>
 
     </aside>
 
@@ -5603,7 +5603,7 @@ Same idea as getOne()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5630,7 +5630,7 @@ Same idea as getOne()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">634</span>
+    <span class="phpdocumentor-element-found-in__line">639</span>
 
     </aside>
 
@@ -5676,7 +5676,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5703,7 +5703,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">912</span>
+    <span class="phpdocumentor-element-found-in__line">917</span>
 
     </aside>
 
@@ -5746,7 +5746,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5773,7 +5773,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2396</span>
+    <span class="phpdocumentor-element-found-in__line">2401</span>
 
     </aside>
 
@@ -5795,7 +5795,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5838,7 +5838,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1352</span>
+    <span class="phpdocumentor-element-found-in__line">1357</span>
 
     </aside>
 
@@ -5881,7 +5881,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -5906,7 +5906,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">525</span>
+    <span class="phpdocumentor-element-found-in__line">530</span>
 
     </aside>
 
@@ -5951,7 +5951,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">687</span>
+    <span class="phpdocumentor-element-found-in__line">692</span>
 
     </aside>
 
@@ -5985,7 +5985,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6019,7 +6019,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2428</span>
+    <span class="phpdocumentor-element-found-in__line">2433</span>
 
     </aside>
 
@@ -6073,7 +6073,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2363</span>
+    <span class="phpdocumentor-element-found-in__line">2368</span>
 
     </aside>
 
@@ -6095,7 +6095,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6138,7 +6138,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2335</span>
+    <span class="phpdocumentor-element-found-in__line">2340</span>
 
     </aside>
 
@@ -6181,7 +6181,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2460</span>
+    <span class="phpdocumentor-element-found-in__line">2465</span>
 
     </aside>
 
@@ -6215,7 +6215,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6242,7 +6242,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1433</span>
+    <span class="phpdocumentor-element-found-in__line">1438</span>
 
     </aside>
 
@@ -6275,7 +6275,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6300,7 +6300,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">943</span>
+    <span class="phpdocumentor-element-found-in__line">948</span>
 
     </aside>
 
@@ -6352,7 +6352,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6377,7 +6377,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1007</span>
+    <span class="phpdocumentor-element-found-in__line">1012</span>
 
     </aside>
 
@@ -6464,7 +6464,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">739</span>
+    <span class="phpdocumentor-element-found-in__line">744</span>
 
     </aside>
 
@@ -6486,7 +6486,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6511,7 +6511,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1536</span>
+    <span class="phpdocumentor-element-found-in__line">1541</span>
 
     </aside>
 
@@ -6555,7 +6555,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1547</span>
+    <span class="phpdocumentor-element-found-in__line">1552</span>
 
     </aside>
 
@@ -6600,7 +6600,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1936</span>
+    <span class="phpdocumentor-element-found-in__line">1941</span>
 
     </aside>
 
@@ -6650,7 +6650,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1989</span>
+    <span class="phpdocumentor-element-found-in__line">1994</span>
 
     </aside>
 
@@ -6683,7 +6683,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1906</span>
+    <span class="phpdocumentor-element-found-in__line">1911</span>
 
     </aside>
 
@@ -6715,7 +6715,7 @@ Same idea as getValue()</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6740,7 +6740,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2565</span>
+    <span class="phpdocumentor-element-found-in__line">2570</span>
 
     </aside>
 
@@ -6773,7 +6773,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1790</span>
+    <span class="phpdocumentor-element-found-in__line">1795</span>
 
     </aside>
 
@@ -6806,7 +6806,7 @@ Same idea as getValue()</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2035</span>
+    <span class="phpdocumentor-element-found-in__line">2040</span>
 
     </aside>
 
@@ -6852,7 +6852,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1878</span>
+    <span class="phpdocumentor-element-found-in__line">1883</span>
 
     </aside>
 
@@ -6886,7 +6886,7 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -6911,7 +6911,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2009</span>
+    <span class="phpdocumentor-element-found-in__line">2014</span>
 
     </aside>
 
@@ -6944,7 +6944,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1564</span>
+    <span class="phpdocumentor-element-found-in__line">1569</span>
 
     </aside>
 
@@ -6998,7 +6998,7 @@ its SQL part of the query according to operator in &#039; $operator ?&#039; or
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1631</span>
+    <span class="phpdocumentor-element-found-in__line">1636</span>
 
     </aside>
 
@@ -7007,7 +7007,7 @@ any passed update data, and the desired rows.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_buildQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numRows</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr>|bool</span></code>
+                <span class="phpdocumentor-signature__name">_buildQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$numRows</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr>|bool|mixed</span></code>
 
         <section class="phpdocumentor-description"><p>It then builds the SQL query.</p>
 </section>
@@ -7045,14 +7045,14 @@ or only $count</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr>|bool</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr>|bool|mixed</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Returns the $stmt object.</p>
 </section>
@@ -7072,7 +7072,7 @@ or only $count</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1506</span>
+    <span class="phpdocumentor-element-found-in__line">1511</span>
 
     </aside>
 
@@ -7123,7 +7123,7 @@ and then updates the param_type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1679</span>
+    <span class="phpdocumentor-element-found-in__line">1684</span>
 
     </aside>
 
@@ -7132,14 +7132,14 @@ and then updates the param_type.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_dynamicBindResults</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stmt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span></code>
+                <span class="phpdocumentor-signature__name">_dynamicBindResults</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stmt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$stmt</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Equal to the prepared statement object.</p>
@@ -7158,7 +7158,7 @@ and then updates the param_type.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -7185,7 +7185,7 @@ and then updates the param_type.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2055</span>
+    <span class="phpdocumentor-element-found-in__line">2060</span>
 
     </aside>
 
@@ -7194,7 +7194,7 @@ and throws an error if there was a problem.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">_prepareQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr></span></code>
+                <span class="phpdocumentor-signature__name">_prepareQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr></span></code>
 
     
     
@@ -7208,14 +7208,14 @@ and throws an error if there was a problem.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Src\Core\mysqli_stmt">mysqli_stmt</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\mysqli_stmt">mysqli_stmt</abbr></span>
             &mdash;
         
     
@@ -7233,7 +7233,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2088</span>
+    <span class="phpdocumentor-element-found-in__line">2093</span>
 
     </aside>
 
@@ -7276,7 +7276,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2113</span>
+    <span class="phpdocumentor-element-found-in__line">2118</span>
 
     </aside>
 
@@ -7326,7 +7326,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">446</span>
+    <span class="phpdocumentor-element-found-in__line">451</span>
 
     </aside>
 
@@ -7361,7 +7361,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1588</span>
+    <span class="phpdocumentor-element-found-in__line">1593</span>
 
     </aside>
 
@@ -7413,7 +7413,7 @@ and throws an error if there was a problem.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -7440,7 +7440,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2441</span>
+    <span class="phpdocumentor-element-found-in__line">2446</span>
 
     </aside>
 
@@ -7475,7 +7475,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2599</span>
+    <span class="phpdocumentor-element-found-in__line">2604</span>
 
     </aside>
 
@@ -7529,7 +7529,7 @@ and throws an error if there was a problem.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/MysqliDb.php"><a href="files/core-mysqlidb.html"><abbr title="Core/MysqliDb.php">MysqliDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">544</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -7537,7 +7537,7 @@ and throws an error if there was a problem.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">queryUnprepared</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|<abbr title="\Src\Core\mysqli_result">mysqli_result</abbr></span></code>
+                <span class="phpdocumentor-signature__name">queryUnprepared</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|<abbr title="\mysqli_result">mysqli_result</abbr></span></code>
 
         <section class="phpdocumentor-description"><p>WARNING: Use with caution.
 This method does not escape strings by default so make sure you'll never use it in production.</p>
@@ -7574,14 +7574,14 @@ This method does not escape strings by default so make sure you'll never use it 
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Src\Core\mysqli_result">mysqli_result</abbr></span>
+    <span class="phpdocumentor-signature__response_type">bool|<abbr title="\mysqli_result">mysqli_result</abbr></span>
             &mdash;
         
     

@@ -33,7 +33,8 @@
         "ext-simplexml": "*",
         "ext-curl": "*",
         "ext-openssl": "*",
-        "apache/log4php": "2.3.0"
+        "apache/log4php": "2.3.0",
+        "thingengineer/mysqli-database-class": "dev-master"
     },
     "autoload": {
         "psr-4": {

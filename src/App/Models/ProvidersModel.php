@@ -13,14 +13,17 @@
 
     class ProvidersModel extends Model
     {
-        public function __construct()
-        {
-            echo "<br>ProviderModel</br>";
-        }
+        protected static $data = [];
 
-        public static function get()
+        public static function get(int $id = NULL): array
         {
-            return self::$db->rawQuery("SELECT * FROM product");
+            if (!is_null($id)) {
+                Model::$db->where("id", $id);
+            }
+
+            Model::$db->where('enabled', 1);
+
+            return Model::$db->get('provider');
         }
 
     }

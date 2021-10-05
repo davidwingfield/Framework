@@ -16,17 +16,17 @@
 
         public static function index()
         {
-            Controller::$debug_log->trace("TEST");
+            //Controller::$debug_log->trace("TEST");
             $data = array(
                 "types" => [],
-                "provider" => [],
+                "provider" => ProvidersModel::get(2),
                 "company" => [],
                 "location" => [],
             );
-            //$providers = ProvidersModel::get();
-            //display($providers);
+
             try {
                 View::render("providers/index", $data);
+                exit();
             } catch (Exception $e) {
                 try {
                     View::render_invalid_page("providers/index", $data);

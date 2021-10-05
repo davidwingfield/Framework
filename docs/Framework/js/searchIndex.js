@@ -6,10 +6,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-App-Controllers-ProvidersController.html"
         },                {
+            "fqsen": "\\Src\\App\\Controllers\\ProvidersController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-ProvidersController.html#method___construct"
+        },                {
             "fqsen": "\\Src\\App\\Controllers\\ProvidersController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "",
             "url": "classes/Src-App-Controllers-ProvidersController.html#method_index"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\ProvidersController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-ProvidersController.html#method_edit"
         },                {
             "fqsen": "\\Src\\App\\Controllers\\ProvidersController\u003A\u003AserveEdit\u0028\u0029",
             "name": "serveEdit",
@@ -21,30 +31,115 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-App-Controllers-ProvidersController.html#method_serveNew"
         },                {
-            "fqsen": "\\Src\\App\\Middleware\\Auth",
+            "fqsen": "\\Src\\App\\Middlewares\\Auth",
             "name": "Auth",
             "summary": "",
-            "url": "classes/Src-App-Middleware-Auth.html"
+            "url": "classes/Src-App-Middlewares-Auth.html"
         },                {
-            "fqsen": "\\Src\\App\\Middleware\\Auth\u003A\u003Amiddleware\u0028\u0029",
-            "name": "middleware",
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003Alogged_in\u0028\u0029",
+            "name": "logged_in",
             "summary": "",
-            "url": "classes/Src-App-Middleware-Auth.html#method_middleware"
+            "url": "classes/Src-App-Middlewares-Auth.html#method_logged_in"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003Aauthenticate\u0028\u0029",
+            "name": "authenticate",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_authenticate"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003AauthenticateRemotely\u0028\u0029",
+            "name": "authenticateRemotely",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_authenticateRemotely"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003AauthenticateLocally\u0028\u0029",
+            "name": "authenticateLocally",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_authenticateLocally"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003Ahttp\u0028\u0029",
+            "name": "http",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_http"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003Abase64UrlDecode\u0028\u0029",
+            "name": "base64UrlDecode",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_base64UrlDecode"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003AencodeLength\u0028\u0029",
+            "name": "encodeLength",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_encodeLength"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003Abase64UrlEncode\u0028\u0029",
+            "name": "base64UrlEncode",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_base64UrlEncode"
         },                {
             "fqsen": "\\Src\\App\\Models\\ProvidersModel",
             "name": "ProvidersModel",
             "summary": "",
             "url": "classes/Src-App-Models-ProvidersModel.html"
         },                {
+            "fqsen": "\\Src\\App\\Models\\ProvidersModel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvidersModel.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvidersModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvidersModel.html#method_get"
+        },                {
             "fqsen": "\\Src\\Core\\Controller",
             "name": "Controller",
             "summary": "",
             "url": "classes/Src-Core-Controller.html"
         },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024debug_log",
+            "name": "debug_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_debug_log"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024event_log",
+            "name": "event_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_event_log"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024access_log",
+            "name": "access_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_access_log"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024image_log",
+            "name": "image_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_image_log"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024batch_log",
+            "name": "batch_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_batch_log"
+        },                {
             "fqsen": "\\Src\\Core\\Model",
             "name": "Model",
             "summary": "",
             "url": "classes/Src-Core-Model.html"
+        },                {
+            "fqsen": "\\Src\\Core\\Model\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Src-Core-Model.html#method_init"
+        },                {
+            "fqsen": "\\Src\\Core\\Model\u003A\u003A\u0024db",
+            "name": "db",
+            "summary": "",
+            "url": "classes/Src-Core-Model.html#property_db"
         },                {
             "fqsen": "\\Src\\Core\\MysqliDb",
             "name": "MysqliDb",
@@ -721,6 +816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-Core-Router.html#method_mapController"
         },                {
+            "fqsen": "\\Src\\Core\\Router\u003A\u003AparseRoute\u0028\u0029",
+            "name": "parseRoute",
+            "summary": "",
+            "url": "classes/Src-Core-Router.html#method_parseRoute"
+        },                {
             "fqsen": "\\Src\\Core\\Router\u003A\u003A\u0024controllerNamespace",
             "name": "controllerNamespace",
             "summary": "",
@@ -730,6 +830,271 @@ Search.appendIndex(
             "name": "routes",
             "summary": "",
             "url": "classes/Src-Core-Router.html#property_routes"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\CustomersController",
+            "name": "CustomersController",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-CustomersController.html"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\CustomersController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-CustomersController.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\CustomersController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-CustomersController.html#method_index"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPagesController",
+            "name": "StaticPagesController",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPagesController.html"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPagesController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPagesController.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPagesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPagesController.html#method_index"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPagesController\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPagesController.html#method_login"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\UsersController",
+            "name": "UsersController",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-UsersController.html"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\UsersController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-UsersController.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CustomersModel",
+            "name": "CustomersModel",
+            "summary": "",
+            "url": "classes/Src-App-Models-CustomersModel.html"
+        },                {
+            "fqsen": "\\Src\\Core\\Request",
+            "name": "Request",
+            "summary": "",
+            "url": "classes/Src-Core-Request.html"
+        },                {
+            "fqsen": "\\Src\\Core\\Request\u003A\u003Auri\u0028\u0029",
+            "name": "uri",
+            "summary": "returns\u0020the\u0020request\u0020uri.",
+            "url": "classes/Src-Core-Request.html#method_uri"
+        },                {
+            "fqsen": "\\Src\\Core\\Request\u003A\u003Amethod\u0028\u0029",
+            "name": "method",
+            "summary": "",
+            "url": "classes/Src-Core-Request.html#method_method"
+        },                {
+            "fqsen": "\\Src\\Core\\View",
+            "name": "View",
+            "summary": "",
+            "url": "classes/Src-Core-View.html"
+        },                {
+            "fqsen": "\\Src\\Core\\View\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Src-Core-View.html#method_render"
+        },                {
+            "fqsen": "\\Src\\Core\\View\u003A\u003Arender_json\u0028\u0029",
+            "name": "render_json",
+            "summary": "",
+            "url": "classes/Src-Core-View.html#method_render_json"
+        },                {
+            "fqsen": "\\Src\\Core\\View\u003A\u003Arender_invalid_json\u0028\u0029",
+            "name": "render_invalid_json",
+            "summary": "",
+            "url": "classes/Src-Core-View.html#method_render_invalid_json"
+        },                {
+            "fqsen": "\\Src\\Core\\View\u003A\u003Arender_invalid_page\u0028\u0029",
+            "name": "render_invalid_page",
+            "summary": "",
+            "url": "classes/Src-Core-View.html#method_render_invalid_page"
+        },                {
+            "fqsen": "\\Src\\Core\\View\u003A\u003A\u0024status",
+            "name": "status",
+            "summary": "",
+            "url": "classes/Src-Core-View.html#property_status"
+        },                {
+            "fqsen": "\\Src\\Init\\AppIni",
+            "name": "AppIni",
+            "summary": "",
+            "url": "classes/Src-Init-AppIni.html"
+        },                {
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Src-Init-AppIni.html#method_load"
+        },                {
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Src-Init-AppIni.html#method_set"
+        },                {
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Src-Init-AppIni.html#property_path"
+        },                {
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003A\u0024ini",
+            "name": "ini",
+            "summary": "",
+            "url": "classes/Src-Init-AppIni.html#property_ini"
+        },                {
+            "fqsen": "\\ROOT_PATH",
+            "name": "ROOT_PATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_ROOT_PATH"
+        },                {
+            "fqsen": "\\ROUTES_PATH",
+            "name": "ROUTES_PATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_ROUTES_PATH"
+        },                {
+            "fqsen": "\\VIEWS_PATH",
+            "name": "VIEWS_PATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_VIEWS_PATH"
+        },                {
+            "fqsen": "\\Src\\Init\\DEV",
+            "name": "DEV",
+            "summary": "",
+            "url": "namespaces/src-init.html#constant_DEV"
+        },                {
+            "fqsen": "\\Src\\Init\\PRODUCTION",
+            "name": "PRODUCTION",
+            "summary": "",
+            "url": "namespaces/src-init.html#constant_PRODUCTION"
+        },                {
+            "fqsen": "\\Src\\Init\\Config",
+            "name": "Config",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "Show\u0020or\u0020hide\u0020error\u0020messages\u0020on\u0020screen",
+            "url": "classes/Src-Init-Config.html#method_init"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBName\u0028\u0029",
+            "name": "getDBName",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getDBName"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBHost\u0028\u0029",
+            "name": "getDBHost",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getDBHost"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBUser\u0028\u0029",
+            "name": "getDBUser",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getDBUser"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBPass\u0028\u0029",
+            "name": "getDBPass",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getDBPass"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetDBName\u0028\u0029",
+            "name": "setDBName",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setDBName"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetDBHost\u0028\u0029",
+            "name": "setDBHost",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setDBHost"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetDBUser\u0028\u0029",
+            "name": "setDBUser",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setDBUser"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetDBPassword\u0028\u0029",
+            "name": "setDBPassword",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setDBPassword"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetDBPort\u0028\u0029",
+            "name": "setDBPort",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setDBPort"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBNAME",
+            "name": "DBNAME",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_DBNAME"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBHOST",
+            "name": "DBHOST",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_DBHOST"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBUSER",
+            "name": "DBUSER",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_DBUSER"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBPORT",
+            "name": "DBPORT",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_DBPORT"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024SHOW_ERRORS",
+            "name": "SHOW_ERRORS",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_SHOW_ERRORS"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBPASS",
+            "name": "DBPASS",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_DBPASS"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024EXPIRETIME",
+            "name": "EXPIRETIME",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_EXPIRETIME"
+        },                {
+            "fqsen": "\\Src\\Init\\DotEnv",
+            "name": "DotEnv",
+            "summary": "",
+            "url": "classes/Src-Init-DotEnv.html"
+        },                {
+            "fqsen": "\\Src\\Init\\DotEnv\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-Init-DotEnv.html#method___construct"
+        },                {
+            "fqsen": "\\Src\\Init\\DotEnv\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "",
+            "url": "classes/Src-Init-DotEnv.html#method_load"
+        },                {
+            "fqsen": "\\Src\\Init\\DotEnv\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "The\u0020directory\u0020where\u0020the\u0020.env\u0020file\u0020can\u0020be\u0020located.",
+            "url": "classes/Src-Init-DotEnv.html#property_path"
+        },                {
+            "fqsen": "\\dd\u0028\u0029",
+            "name": "dd",
+            "summary": "functions.php",
+            "url": "namespaces/default.html#function_dd"
+        },                {
+            "fqsen": "\\display\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "namespaces/default.html#function_display"
         },                {
             "fqsen": "\\",
             "name": "\\",
@@ -746,20 +1111,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/src-app.html"
         },                {
-            "fqsen": "\\Src\\App\\Middleware",
-            "name": "Middleware",
+            "fqsen": "\\Src\\App\\Middlewares",
+            "name": "Middlewares",
             "summary": "",
-            "url": "namespaces/src-app-middleware.html"
+            "url": "namespaces/src-app-middlewares.html"
         },                {
             "fqsen": "\\Src\\App\\Models",
             "name": "Models",
             "summary": "",
             "url": "namespaces/src-app-models.html"
         },                {
-            "fqsen": "\\Src\\Config",
-            "name": "Config",
+            "fqsen": "\\Src\\App\\Routes",
+            "name": "Routes",
             "summary": "",
-            "url": "namespaces/src-config.html"
+            "url": "namespaces/src-app-routes.html"
         },                {
             "fqsen": "\\Src\\Core",
             "name": "Core",
@@ -770,5 +1135,10 @@ Search.appendIndex(
             "name": "Src",
             "summary": "",
             "url": "namespaces/src.html"
+        },                {
+            "fqsen": "\\Src\\Init",
+            "name": "Init",
+            "summary": "",
+            "url": "namespaces/src-init.html"
         }            ]
 );
