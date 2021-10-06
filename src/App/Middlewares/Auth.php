@@ -1,5 +1,10 @@
 <?php
-
+    /**
+     * Auth.php
+     *
+     * @return
+     */
+    
     namespace Src\App\Middlewares;
 
     use \Firebase\JWT\JWT;

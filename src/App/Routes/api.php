@@ -1,11 +1,12 @@
 <?php
     /**
-     * api.php
+     * Api.php
      *
-     * @return ${TYPE_HINT}
-     * ${THROWS_DOC}
+     * @return
      */
 
+    namespace Src\App\Routes;
+    
     use Src\Core\Router;
 
     //Router::get('', 'StaticPagesController@serveLogin');

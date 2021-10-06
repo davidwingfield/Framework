@@ -14,6 +14,7 @@
         protected static $SHOW_ERRORS;
         protected static $DBPASS;
         protected static $EXPIRETIME;
+        protected static $DEVELOPMENT_MODE;
 
         /**
          * Show or hide error messages on screen
@@ -30,6 +31,7 @@
             self::setDBHost($ini["db_host"]);
             self::setDBUser($ini["db_user"]);
             self::setDBPassword($ini["db_pass"]);
+            self::setDevelopmentMode($ini["development_mode"]);
         }
 
         public static function getDBName()
@@ -52,7 +54,12 @@
             return self::$DBPASS;
         }
 
-        private static function setDBName($DBNAME = NULL)
+        public static function getDevelopmentMode()
+        {
+            return self::$DEVELOPMENT_MODE;
+        }
+
+        private static function setDBName($DBNAME = null)
         {
             if (!is_null($DBNAME)) {
                 self::$DBNAME = $DBNAME;
@@ -60,31 +67,38 @@
             }
         }
 
-        private static function setDBHost($DBHOST = NULL)
+        private static function setDBHost($DBHOST = null)
         {
             if (!is_null($DBHOST)) {
                 self::$DBHOST = $DBHOST;
             }
         }
 
-        private static function setDBUser($DBUSER = NULL)
+        private static function setDBUser($DBUSER = null)
         {
             if (!is_null($DBUSER)) {
                 self::$DBUSER = $DBUSER;
             }
         }
 
-        private static function setDBPassword($DBPASS = NULL)
+        private static function setDBPassword($DBPASS = null)
         {
             if (!is_null($DBPASS)) {
                 self::$DBPASS = $DBPASS;
             }
         }
 
-        private static function setDBPort($DBPORT = NULL)
+        private static function setDBPort($DBPORT = null)
         {
             if (!is_null($DBPORT)) {
                 self::$DBPORT = $DBPORT;
+            }
+        }
+
+        private static function setDevelopmentMode($development_mode = null)
+        {
+            if (!is_null($development_mode)) {
+                self::$DEVELOPMENT_MODE = $development_mode;
             }
         }
 

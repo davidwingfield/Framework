@@ -59,7 +59,7 @@
                     "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/debug.log",
                     "maxBackupIndex" => 3,
                     "maxFileSize" => "2MB",
-                    "compress" => TRUE,
+                    "compress" => true,
                 ),
             ),
             //////
@@ -75,7 +75,7 @@
                     "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/access.log",
                     "maxBackupIndex" => 3,
                     "maxFileSize" => "2MB",
-                    "compress" => TRUE,
+                    "compress" => true,
                 ),
             ),
             //////
@@ -89,7 +89,7 @@
                 ),
                 "params" => array(
                     "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/image.log",
-                    "append" => TRUE,
+                    "append" => true,
                 ),
             ),
             //////
@@ -103,7 +103,7 @@
                 ),
                 "params" => array(
                     "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/batch.log",
-                    "append" => TRUE,
+                    "append" => true,
                 ),
             ),
             //////
@@ -112,21 +112,21 @@
                 "layout" => array(
                     "class" => "LoggerLayoutPattern",
                     "params" => array(
-                        "conversionPattern" => "%d{m/d/Y H:i:s.u} [%c] %m [%F:%L][IP:%X{ip}]%n",
+                        "conversionPattern" => "%d{m/d/Y H:i:s} [%c] [IP:%X{ip}] [%F:%L] [%method:%pid] %m%n",
                     ),
                 ),
                 "params" => array(
                     "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/event.log",
                     "maxBackupIndex" => 3,
                     "maxFileSize" => "2MB",
-                    "compress" => TRUE,
+                    "compress" => true,
                 ),
             ),
             //////
         ),
     ));
 
-    $MAIN_API_FILE_LOGGER = NULL;
+    $MAIN_API_FILE_LOGGER = null;
 
     $MAIN_API_FILE_LOGGER = Logger::getLogger("MAIN");
     $ACCESS_LOGGER = Logger::getLogger("ACCESS");
