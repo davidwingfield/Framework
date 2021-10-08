@@ -6,5 +6,10 @@
 ?>
 <section id="provider_edit">
     <h1>Provider Edit</h1>
-    <pre><?php var_dump($page_data, 1); ?></pre>
+    <pre><?php echo var_export($page_data, 1); ?></pre>
 </section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log("page:", "provider_edit")
+    })
+</script>

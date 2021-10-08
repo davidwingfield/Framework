@@ -6,5 +6,10 @@
 ?>
 <section id="provider_index">
     <h1>Provider Index</h1>
-    <pre><?php echo var_dump($page_data, 1); ?></pre>
+    <pre><?php echo var_export($page_data, 1); ?></pre>
 </section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log("page:", "provider_index")
+    })
+</script>

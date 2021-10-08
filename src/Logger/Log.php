@@ -1,17 +1,15 @@
 <?php
-    /**
-     * Log.php
-     *
-     * @return
-     */
 
     namespace Src\Logger;
 
     use Src\Core\Controller;
 
     /**
-     * Src\Core\Log
+     * Short Config Description
      *
+     * Long Config Description
+     *
+     * @package            Application\Logger
      */
     class Log
     {

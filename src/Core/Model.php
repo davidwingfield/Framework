@@ -1,9 +1,4 @@
 <?php
-    /**
-     * Controller.php
-     *
-     * @subpackage   Model
-     */
 
     namespace Src\Core;
 
@@ -11,15 +6,18 @@
     use Src\Init\Config;
 
     /**
-     * Src\Core\Model
+     * Short Model Description
      *
-     * Short Description
+     * Long Model Description
      *
-     * Long description
+     * @package            Application\Core
      */
     class Model
     {
 
+        /**
+         * @var MysqliDb $db
+         */
         public static $db;
 
         public static function init()

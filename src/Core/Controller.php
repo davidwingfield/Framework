@@ -1,23 +1,15 @@
 <?php
-    /**
-     * Controller.php
-     *
-     * @category        Controllers
-     * @subpackage      Controller
-     * @uses            used in prod env for logging all type of error of php code in a file for further debugging
-     *                  and code performance
-     */
 
     namespace Src\Core;
 
     use Src\Logger\Log;
 
     /**
-     * Src\Core\Controller
+     * Short Controller Description
      *
-     * Short Description
+     * Long Controller Description
      *
-     * Long description
+     * @package            Application\Core
      */
     class Controller
     {
@@ -29,7 +21,7 @@
 
         public static function init()
         {
-            
+
         }
 
     }

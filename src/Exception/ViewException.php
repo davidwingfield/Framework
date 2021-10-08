@@ -5,9 +5,20 @@
     use Exception;
     use Throwable;
 
+    /**
+     * ViewException
+     *
+     * Short Controller Description
+     *
+     * Long Controller Description
+     *
+     * @package         Application\Exception
+     * @uses            used in prod env for logging all type of error of php code in a file for further debugging
+     *                  and code performance
+     */
     class ViewException extends Exception
     {
-        public function __construct($message, $code = 0, Throwable $previous = NULL)
+        public function __construct($message, $code = 0, Throwable $previous = null)
         {
             // some code
 
@@ -18,7 +29,7 @@
         // custom string representation of object
         public function __toString()
         {
-            
+
             return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
         }
 

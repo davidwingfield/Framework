@@ -1,18 +1,17 @@
 <?php
-    /**
-     * View.php
-     *
-     * Core View class
-     */
 
     namespace Src\Core;
 
     use Exception;
 
     /**
-     * View
+     * Short View Description
      *
+     * Long View Description
      *
+     * @package            Application\Core
+     * @uses               used in prod env for logging all type of error of php code in a file for further debugging
+     *                     and code performance
      */
     class View
     {

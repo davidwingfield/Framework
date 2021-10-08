@@ -84,20 +84,26 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/Application-Model.html">Model</a>
+                <a href="packages/Application-App.html">App</a>
                 
             </li>
                     <li>
-                <a href="packages/Application-Controller.html">Controller</a>
+                <a href="packages/Application-Core.html">Core</a>
                 
             </li>
                     <li>
-                <a href="packages/Application-Controllers.html">Controllers</a>
+                <a href="packages/Application-Init.html">Init</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Application-Exception.html">Exception</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Application-Logger.html">Logger</a>
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/FrameWork.html">FrameWork</a></h4>
 
                         </section>
             
@@ -129,6 +135,7 @@
             in package
             <ul class="phpdocumentor-breadcrumbs">
                                     <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application-Core.html">Core</a></li>
                             </ul>
         </div>
     
@@ -138,14 +145,33 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">Short Router Description</p>
+
+    <section class="phpdocumentor-description"><p>Long Router Description</p>
+</section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">uses</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Src\Core\used">used</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"><p>in prod env for logging all type of error of php code in a file for further debugging
+and code performance</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -161,14 +187,14 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Src-Core-Router.html#property_routes">$routes</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: array&lt;string|int, array&lt;string|int, mixed&gt;&gt;            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Src-Core-Router.html#property_controllerNamespace">$controllerNamespace</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -256,21 +282,19 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, array&lt;string|int, mixed&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">$routes</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;GET&#039; =&gt; [], &quot;POST&quot; =&gt; [], &quot;DELETE&quot; =&gt; [], &quot;PATCH&quot; =&gt; [], &quot;OPTIONS&quot; =&gt; [], &quot;PUT&quot; =&gt; []]</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&quot;GET&quot; =&gt; [], &quot;POST&quot; =&gt; [], &quot;DELETE&quot; =&gt; [], &quot;PATCH&quot; =&gt; [], &quot;OPTIONS&quot; =&gt; [], &quot;PUT&quot; =&gt; []]</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -290,20 +314,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$controllerNamespace</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;Src\App\Controllers\&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&quot;Src\App\Controllers\&quot;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+        <section class="phpdocumentor-description"><p>Namespace for the route's controller</p>
+</section>
 
     
 
@@ -328,7 +352,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -380,7 +404,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -432,7 +456,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -481,7 +505,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -523,7 +547,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -572,7 +596,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -624,7 +648,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -676,7 +700,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Core/Router.php"><a href="files/core-router.html"><abbr title="Core/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 

@@ -1,6 +1,15 @@
 <?php
-    print_r($arra);          //undefined variable
-    print_r($dssdfdfgg);     //undefined variable
-    include_once 'file.php'; //No such file or directory
-    
+    $page_data = [];
+    if (isset($data)) {
+        $page_data = $data;
+    }
 ?>
+<section id="page_dashboard_index">
+    <h1>Dashboard Index</h1>
+    <pre><?php echo var_export($page_data, 1); ?></pre>
+</section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log("page:", "page_dashboard_index")
+    })
+</script>

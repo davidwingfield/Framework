@@ -1,23 +1,33 @@
 <?php
-    /**
-     * ErrorHandler.php
-     *
-     */
 
     namespace Src\Exception;
 
-    use ErrorException;
-    use Src\Core\Controller;
+    use Exception;
     use Src\Init\Config;
     use Src\Logger\Log;
 
+    /**
+     * Short ErrorHandler Description
+     *
+     * Long ErrorHandler Description
+     *
+     * @package         Application\Exception
+     * @uses            used in prod env for logging all type of error of php code in a file for further debugging
+     *                  and code performance
+     */
     class ErrorHandler
     {
+        /** @var int Short docblock, should contain a description. */
         public static $errno;
+        /** @var string Short docblock, should contain a description. */
         public static $errstr;
+        /** @var string Short docblock, should contain a description. */
         public static $errfile;
+        /** @var int Short docblock, should contain a description. */
         public static $errline;
+        /** @var array|null Short docblock, should contain a description. */
         public static $errcontext;
+        /** @var array Short docblock, should contain a description. */
         public static $errorType = array(
             E_ERROR => "ERROR",
             E_WARNING => "WARNING",
@@ -37,7 +47,7 @@
         );
 
         /**
-         * Custom Error Handler
+         * Directs Error
          *
          * @param int         $code
          * @param string      $description
@@ -88,7 +98,7 @@
          *
          * @return array Array of error word, and log location.
          */
-        private static function mapErrorCode($code)
+        private static function mapErrorCode(int $code): array
         {
             $error = $log = null;
             $logger = 'trace';
@@ -138,7 +148,16 @@
             );
         }
 
-        private static function log_error($num, $str, $file, $line, $context = null)
+        /**
+         * Custom Error Handle
+         *
+         * @param int        $num
+         * @param string     $str
+         * @param string     $file
+         * @param string     $line
+         * @param array|null $context
+         */
+        private static function log_error(int $num, string $str, string $file, string $line, array $context = null): void
         {
             if (Config::getDevelopmentMode()) {
 
@@ -146,6 +165,11 @@
             //self::log_exception(new ErrorException($str, 0, $num, $file, $line));
         }
 
+        /**
+         * Logs custom exceptions
+         *
+         * @param \Exception $e
+         */
         private static function log_exception(Exception $e)
         {
             //log_exception(new ErrorException($str, 0, $num, $file, $line));

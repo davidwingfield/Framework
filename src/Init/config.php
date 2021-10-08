@@ -2,8 +2,13 @@
 
     namespace Src\Init;
 
-    use Src\Init\AppIni;
-
+    /**
+     * Short Config Description
+     *
+     * Long Config Description
+     *
+     * @package            Application\Init
+     */
     class Config
     {
 
@@ -15,23 +20,28 @@
         protected static $DBPASS;
         protected static $EXPIRETIME;
         protected static $DEVELOPMENT_MODE;
+        protected static $VERSION;
 
         /**
-         * Show or hide error messages on screen
-         *
-         * @var boolean
+         * @var boolean Show or hide error messages on screen
          */
         //protected static $SHOW_ERRORS = TRUE;
 
         //protected static $EXPIRE_TIME = EXPIRETIME;
 
-        public static function init(array $ini = [])
+        public static function init()
         {
-            self::setDBName($ini["db_name"]);
-            self::setDBHost($ini["db_host"]);
-            self::setDBUser($ini["db_user"]);
-            self::setDBPassword($ini["db_pass"]);
-            self::setDevelopmentMode($ini["development_mode"]);
+            self::setDBName(DBNAME);
+            self::setDBHost(DBHOST);
+            self::setDBUser(DBUSER);
+            self::setDBPassword(DBPASS);
+            self::setDevelopmentMode(DEVMODE);
+            self::setVersion(VERSION);
+        }
+
+        public static function getVersion()
+        {
+            return self::$VERSION;
         }
 
         public static function getDBName()
@@ -99,6 +109,13 @@
         {
             if (!is_null($development_mode)) {
                 self::$DEVELOPMENT_MODE = $development_mode;
+            }
+        }
+
+        private static function setVersion($version = null)
+        {
+            if (!is_null($version)) {
+                self::$VERSION = $version;
             }
         }
 

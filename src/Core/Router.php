@@ -4,12 +4,29 @@
 
     use Exception;
 
+    /**
+     * Short Router Description
+     *
+     * Long Router Description
+     *
+     * @package            Application\Core
+     * @uses               used in prod env for logging all type of error of php code in a file for further debugging
+     *                     and code performance
+     */
     class Router
     {
-        private static $controllerNamespace = 'Src\\App\\Controllers\\';
+        /**
+         * @var string $controllerNamespace Namespace for the route's controller
+         */
+        private static $controllerNamespace = "Src\\App\\Controllers\\";
 
+        public static $params = [];
+
+        /**
+         * @var array[] $routes
+         */
         public static $routes = [
-            'GET' => [],
+            "GET" => [],
             "POST" => [],
             "DELETE" => [],
             "PATCH" => [],
@@ -25,7 +42,6 @@
          */
         public static function get($uri, $controller)
         {
-
             return self::$routes["GET"][trim($uri, '/')] = $controller;
         }
 
@@ -79,18 +95,19 @@
                 exit();
             }
 
-            $routeFound = NULL;
+            $routeFound = null;
 
             foreach (self::$routes[$requestType] as $key => $route) {
                 $regex = self::parseRoute(trim($key, "/"));
                 if (preg_match($regex, trim($uri, "/"))) {
+                    self::setParams($key);
                     $routeFound = $route;
                     break;
                 }
             }
 
             if ($routeFound) {
-                return static::mapController(...explode('@', $routeFound));
+                return static::mapController(...explode("@", $routeFound));
             }
 
             try {
@@ -113,20 +130,25 @@
         public static function mapController($controller, $action)
         {
             $controller = (self::$controllerNamespace . $controller);
-            //
+
             if (class_exists($controller)) {
-                $controller = new $controller; //renew the controller class
+                /**  renew the controller class */
+                $controller = new $controller;
+                /**  check if routes method exists */
                 if (method_exists($controller, $action)) {
                     return array(
                         "controller" => $controller,
                         "action" => $action,
+                        "params" => self::$params,
                     );
-                    //return $controller->$action();
                 }
             }
+            /**
+             * @todo Add Page direction
+             */
 
             try {
-                View::render("errors/500");
+                View::render("errors/404");
                 exit;
             } catch (Exception $e) {
                 //$error = array();
@@ -134,6 +156,47 @@
                 exit();
             }
 
+        }
+
+        private static function setParams(string $key)
+        {
+            self::$params = [];
+            $uri = Request::uri();
+
+            foreach ($_GET as $paramName => $paramValue) {
+                if ($paramName !== "url") {
+                    self::$params[$paramName] = $paramValue;
+                }
+            }
+
+            foreach ($_POST as $paramName => $paramValue) {
+                if ($paramName !== "url") {
+                    self::$params[$paramName] = $paramValue;
+                }
+            }
+
+            $path = str_replace('${', '[', str_replace('}', ']', $key
+                )
+            );
+
+            preg_match_all("/\[([^\]]*)\]/", $path, $matches
+            );
+
+            foreach ($matches[1] as $match) {
+                self::$params[$match] = null;
+            }
+
+            $path = str_replace('[', '', str_replace(']', '', $path));
+            $parts = explode("/", $path);
+            $explodedURI = explode("/", $uri);
+            $n = 0;
+
+            foreach ($parts as $part) {
+                if (array_key_exists($part, self::$params)) {
+                    self::$params[$part] = $explodedURI[$n];
+                }
+                $n++;
+            }
         }
 
         private static function parseRoute(string $route = ""): string

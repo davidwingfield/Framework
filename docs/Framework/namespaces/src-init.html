@@ -84,20 +84,26 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/Application-Model.html">Model</a>
+                <a href="packages/Application-App.html">App</a>
                 
             </li>
                     <li>
-                <a href="packages/Application-Controller.html">Controller</a>
+                <a href="packages/Application-Core.html">Core</a>
                 
             </li>
                     <li>
-                <a href="packages/Application-Controllers.html">Controllers</a>
+                <a href="packages/Application-Init.html">Init</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Application-Exception.html">Exception</a>
+                
+            </li>
+                    <li>
+                <a href="packages/Application-Logger.html">Logger</a>
                 
             </li>
             </ul>
-
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/FrameWork.html">FrameWork</a></h4>
 
                         </section>
             
@@ -132,11 +138,11 @@
 <dl class="phpdocumentor-table-of-contents">
     
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Src-Init-AppIni.html"><abbr title="\Src\Init\AppIni">AppIni</abbr></a></dt>
-        <dd></dd>
+        <dd>Short AppIni Description</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Src-Init-Config.html"><abbr title="\Src\Init\Config">Config</abbr></a></dt>
-        <dd></dd>
+        <dd>Short Config Description</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Src-Init-DotEnv.html"><abbr title="\Src\Init\DotEnv">DotEnv</abbr></a></dt>
-        <dd></dd>
+        <dd>Short DotEnv Description</dd>
     
     </dl>
 
@@ -155,13 +161,27 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/src-init.html#constant_development_mode">development_mode</a>
+    <span>
+        &nbsp;= DEV                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/src-init.html#constant_PRODUCTION">PRODUCTION</a>
     <span>
         &nbsp;= 1                    </span>
 </dt>
 <dd></dd>
 
-                </dl>
+                        <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/src-init.html#function_initLogger">initLogger()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Short Description</dd>
+
+    </dl>
 
         
     <section class="phpdocumentor-constants">
@@ -178,7 +198,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Init/bootstrap.php"><a href="files/init-bootstrap.html"><abbr title="Init/bootstrap.php">bootstrap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -199,6 +219,35 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_development_mode">
+        development_mode
+        <a href="namespaces/src-init.html#constant_development_mode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Init/bootstrap.php"><a href="files/init-bootstrap.html"><abbr title="Init/bootstrap.php">bootstrap.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">development_mode</span>
+    = <span class="phpdocumentor-signature__default-value">DEV</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PRODUCTION">
         PRODUCTION
         <a href="namespaces/src-init.html#constant_PRODUCTION" class="headerlink"><i class="fas fa-link"></i></a>
@@ -207,7 +256,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="Init/bootstrap.php"><a href="files/init-bootstrap.html"><abbr title="Init/bootstrap.php">bootstrap.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -229,7 +278,43 @@
 </article>
             </section>
 
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="namespaces/src-init.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_initLogger">
+        initLogger()
+        <a href="namespaces/src-init.html#function_initLogger" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Init/logger_config.php"><a href="files/init-logger-config.html"><abbr title="Init/logger_config.php">logger_config.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Short Description</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">initLogger</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Long Description</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
         
+    
+</article>
+            </section>
+
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">

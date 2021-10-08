@@ -1,21 +1,24 @@
 <?php
-    /**
-     * Auth.php
-     *
-     * @return
-     */
-    
+
     namespace Src\App\Middlewares;
 
     use \Firebase\JWT\JWT;
     use \Firebase\JWT\JWK;
 
+    /**
+     * Short Auth Description
+     *
+     * Long Auth Description
+     *
+     * @package            Application\App
+     * @subpackage         Middlewares
+     */
     class Auth
     {
 
         public static function logged_in(): bool
         {
-            return TRUE;
+            return true;
 
         }
 
@@ -23,14 +26,14 @@
         {
             // extract the token from the headers
             if (!isset($_SERVER['HTTP_AUTHORIZATION'])) {
-                return FALSE;
+                return false;
             }
 
             $authHeader = $_SERVER['HTTP_AUTHORIZATION'];
             preg_match('/Bearer\s(\S+)/', $authHeader, $matches);
 
             if (!isset($matches[1])) {
-                return FALSE;
+                return false;
             }
 
             $token = $matches[1];
@@ -58,17 +61,17 @@
             $result = self::http($introspectionUrl, $params);
 
             if (!$result['active']) {
-                return FALSE;
+                return false;
             }
 
-            return TRUE;
+            return true;
         }
 
         public static function authenticateLocally($token, $tokenParts): bool
         {
             $tokenParts = explode('.', $token);
-            $decodedToken['header'] = json_decode(self::base64UrlDecode($tokenParts[0]), TRUE);
-            $decodedToken['payload'] = json_decode(self::base64UrlDecode($tokenParts[1]), TRUE);
+            $decodedToken['header'] = json_decode(self::base64UrlDecode($tokenParts[0]), true);
+            $decodedToken['payload'] = json_decode(self::base64UrlDecode($tokenParts[1]), true);
             $decodedToken['signatureProvided'] = self::base64UrlDecode($tokenParts[2]);
 
             // Get the JSON Web Keys from the server that signed the token
@@ -80,7 +83,7 @@
             $keys = self::http($jwksUri);
 
             // Find the public key matching the kid from the input token
-            $publicKey = FALSE;
+            $publicKey = false;
             foreach ($keys['keys'] as $key) {
                 if ($key['kid'] == $decodedToken['header']['kid']) {
                     $publicKey = JWK::parseKey($key);
@@ -90,14 +93,14 @@
             if (!$publicKey) {
                 echo "Couldn't find public key\n";
 
-                return FALSE;
+                return false;
             }
 
             // Check the signing algorithm
             if ($decodedToken['header']['alg'] != 'RS256') {
                 echo "Bad algorithm\n";
 
-                return FALSE;
+                return false;
             }
 
             $result = JWT::decode($token, $publicKey, array('RS256'));
@@ -105,7 +108,7 @@
             if (!$result) {
                 echo "Error decoding JWT\n";
 
-                return FALSE;
+                return false;
             }
 
             // Basic JWT validation passed, now check the claims
@@ -114,35 +117,35 @@
             if ($decodedToken['payload']['iss'] != getenv('OKTA_ISSUER')) {
                 echo "Issuer did not match\n";
 
-                return FALSE;
+                return false;
             }
 
             // Verify the audience matches the expected audience for this API
             if ($decodedToken['payload']['aud'] != getenv('OKTA_AUDIENCE')) {
                 echo "Audience did not match\n";
 
-                return FALSE;
+                return false;
             }
 
             // Verify this token was issued to the expected client_id
             if ($decodedToken['payload']['cid'] != getenv('OKTA_CLIENT_ID')) {
                 echo "Client ID did not match\n";
 
-                return FALSE;
+                return false;
             }
 
-            return TRUE;
+            return true;
         }
 
-        public static function http($url, $params = NULL): string
+        public static function http($url, $params = null): string
         {
             $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             if ($params) {
                 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
             }
 
-            return json_decode(curl_exec($ch), TRUE);
+            return json_decode(curl_exec($ch), true);
         }
 
         public static function base64UrlDecode($input): string
