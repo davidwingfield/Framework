@@ -3,6 +3,10 @@
     namespace Src\App\Controllers;
 
     use Exception;
+    use Src\App\Models\AddressTypesModel;
+    use Src\App\Models\CategoryModel;
+    use Src\App\Models\CompanyModel;
+    use Src\App\Models\ContactTypesModel;
     use Src\App\Models\ProviderModel;
     use Src\Core\Controller;
     use Src\Core\View;
@@ -56,20 +60,36 @@
         public static function edit(array $params = [])
         {
             $provider_id = null;
-
+            $providers = [];
             if (isset($params["provider_id"])) {
                 $provider_id = (int)$params["provider_id"];
             }
 
-            $provider_detail = ProviderModel::get($provider_id);
+            $provider_detail = ProviderModel::getOne($provider_id);
+
+            $address_detail = [];
+            $company_detail = [];
+
+            if (isset($provider_detail["company_id"])) {
+                $company_id = (int)$provider_detail["company_id"];
+                $company_detail = CompanyModel::getOne($company_id);
+            }
+
+            $providers[] = array(
+                "provider_detail" => $provider_detail,
+                "company_detail" => $company_detail,
+                "address_detail" => $address_detail,
+            );
 
             self::$data = [
-                "types" => [],
-                "provider" => $provider_detail,
-                "company" => [],
-                "location" => [],
-                "addresses" => [],
-                "contacts" => [],
+                "types" => array(
+                    "contact_types" => ContactTypesModel::get(),
+                    "address_types" => AddressTypesModel::get(),
+                    "category" => CategoryModel::get(),
+                ),
+                "provider_detail" => $provider_detail,
+                "company_detail" => $company_detail,
+                "address_detail" => $address_detail,
             ];
 
             View::render_template("providers/edit", self::$data);

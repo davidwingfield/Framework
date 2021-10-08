@@ -45,12 +45,22 @@
         public static function get(int $id = null): array
         {
             if (!is_null($id)) {
-                Model::$db->where('id', $id);
+                self::$db->where('id', $id);
             }
 
-            Model::$db->where('enabled', 1);
+            self::$db->where('enabled', 1);
 
-            return Model::$db->get('provider');
+            return self::$db->get('provider');
+        }
+
+        public static function getOne(int $id = null): array
+        {
+            if (!is_null($id)) {
+                self::$db->where('id', $id);
+            }
+            self::$db->where('enabled', 1);
+
+            return self::$db->getOne('provider');
         }
 
     }

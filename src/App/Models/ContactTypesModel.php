@@ -5,19 +5,19 @@
     use Src\Core\Model;
     
 	/**
-     * Short Company Description
+     * Short ContactTypes Description
      *
-     * Long Company Description
+     * Long ContactTypes Description
      *
      * @package            Application\App
      * @subpackage         Controllers
      */
-    class CompanyModel extends Model
+    class ContactTypesModel extends Model
     {
     
     
 		
-		protected static $dbTable = "company";
+		protected static $dbTable = "contact_types";
 		protected static $dbFields = Array (
 			
 		);
