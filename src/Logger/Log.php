@@ -48,6 +48,11 @@
         public static $batch_log;
         public static $mysql_log;
 
+        public function __construct()
+        {
+            self::init();
+        }
+
         public static function init(): void
         {
             global $MAIN_API_FILE_LOGGER;
@@ -56,23 +61,55 @@
             global $BATCH_LOGGER;
             global $IMAGE_LOGGER;
 
-            self::$debug_log = $DEBUG_LOGGER;
+            if (!is_null($DEBUG_LOGGER)) {
+                self::$debug_log = $DEBUG_LOGGER;
+            }
+
             self::$access_log = $ACCESS_LOGGER;
             self::$image_log = $IMAGE_LOGGER;
             self::$batch_log = $BATCH_LOGGER;
             self::$event_log = $MAIN_API_FILE_LOGGER;
         }
 
+        public static function access($message, $level = "trace"): void
+        {
+            if (self::$access_log) {
+
+                switch ($level) {
+
+                    case "debug":
+                        self::$access_log->debug($message);
+                        break;
+                    case "warn":
+                        self::$access_log->warn($message);
+                        break;
+                    case "error":
+                        self::$access_log->error($message);
+                        break;
+                    case "info":
+                        self::$access_log->info($message);
+                        break;
+                    default:
+                        self::$access_log->trace($message);
+                }
+
+            }
+
+        }
+
         public static function trace($message): void
         {
-            self::$debug_log->trace($message);
-            self::$event_log->trace($message);
+            if (self::$debug_log) {
+                self::$debug_log->trace($message);
+            }
+
         }
 
         public static function warn($message): void
         {
-            self::$debug_log->warn($message);
-            self::$event_log->warn($message);
+            if (self::$debug_log) {
+                self::$debug_log->warn($message);
+            }
         }
 
         public static function error($message): void

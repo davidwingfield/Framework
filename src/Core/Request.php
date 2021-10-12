@@ -22,12 +22,29 @@
 
         }
 
+        private static function contains($needle, $haystack)
+        {
+            return strpos($haystack, $needle) !== false;
+        }
+
+        public static function src(): bool
+        {
+            if (preg_match('/\b\/api\/\b/', self::uri())) {
+                echo 'true';
+            }
+
+            $needle = APIPATH . '/v' . VERSION;
+
+            return self::contains($needle, self::uri());
+
+        }
+
         public static function params(): array
         {
             $params = [];
 
             $uri = filter_var(self::uri(), FILTER_SANITIZE_URL);
-            
+
             $url = explode("/", $uri);
 
             foreach ($url AS $val) {

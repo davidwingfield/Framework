@@ -46,6 +46,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-App-Middlewares-Auth.html#method_base64UrlEncode"
         },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003AcheckBrute\u0028\u0029",
+            "name": "checkBrute",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_checkBrute"
+        },                {
+            "fqsen": "\\Src\\App\\Middlewares\\Auth\u003A\u003AinsertBrute\u0028\u0029",
+            "name": "insertBrute",
+            "summary": "",
+            "url": "classes/Src-App-Middlewares-Auth.html#method_insertBrute"
+        },                {
             "fqsen": "\\Src\\Core\\Controller",
             "name": "Controller",
             "summary": "Short\u0020Controller\u0020Description",
@@ -60,6 +70,16 @@ Search.appendIndex(
             "name": "init",
             "summary": "",
             "url": "classes/Src-Core-Controller.html#method_init"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_log"
+        },                {
+            "fqsen": "\\Src\\Core\\Controller\u003A\u003A\u0024access_log",
+            "name": "access_log",
+            "summary": "",
+            "url": "classes/Src-Core-Controller.html#property_access_log"
         },                {
             "fqsen": "\\Src\\Core\\Model",
             "name": "Model",
@@ -136,6 +156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-Core-Router.html#method_mapController"
         },                {
+            "fqsen": "\\Src\\Core\\Router\u003A\u003AsetParams\u0028\u0029",
+            "name": "setParams",
+            "summary": "",
+            "url": "classes/Src-Core-Router.html#method_setParams"
+        },                {
             "fqsen": "\\Src\\Core\\Router\u003A\u003AparseRoute\u0028\u0029",
             "name": "parseRoute",
             "summary": "",
@@ -145,6 +170,11 @@ Search.appendIndex(
             "name": "controllerNamespace",
             "summary": "",
             "url": "classes/Src-Core-Router.html#property_controllerNamespace"
+        },                {
+            "fqsen": "\\Src\\Core\\Router\u003A\u003A\u0024params",
+            "name": "params",
+            "summary": "",
+            "url": "classes/Src-Core-Router.html#property_params"
         },                {
             "fqsen": "\\Src\\Core\\Router\u003A\u003A\u0024routes",
             "name": "routes",
@@ -160,6 +190,21 @@ Search.appendIndex(
             "name": "uri",
             "summary": "returns\u0020the\u0020request\u0020uri.",
             "url": "classes/Src-Core-Request.html#method_uri"
+        },                {
+            "fqsen": "\\Src\\Core\\Request\u003A\u003Acontains\u0028\u0029",
+            "name": "contains",
+            "summary": "",
+            "url": "classes/Src-Core-Request.html#method_contains"
+        },                {
+            "fqsen": "\\Src\\Core\\Request\u003A\u003Asrc\u0028\u0029",
+            "name": "src",
+            "summary": "",
+            "url": "classes/Src-Core-Request.html#method_src"
+        },                {
+            "fqsen": "\\Src\\Core\\Request\u003A\u003Aparams\u0028\u0029",
+            "name": "params",
+            "summary": "",
+            "url": "classes/Src-Core-Request.html#method_params"
         },                {
             "fqsen": "\\Src\\Core\\Request\u003A\u003Amethod\u0028\u0029",
             "name": "method",
@@ -221,25 +266,20 @@ Search.appendIndex(
             "summary": "Short\u0020AppIni\u0020Description",
             "url": "classes/Src-Init-AppIni.html"
         },                {
-            "fqsen": "\\Src\\Init\\AppIni\u003A\u003Aload\u0028\u0029",
-            "name": "load",
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
             "summary": "",
-            "url": "classes/Src-Init-AppIni.html#method_load"
+            "url": "classes/Src-Init-AppIni.html#method_init"
         },                {
             "fqsen": "\\Src\\Init\\AppIni\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
             "url": "classes/Src-Init-AppIni.html#method_set"
         },                {
-            "fqsen": "\\Src\\Init\\AppIni\u003A\u003A\u0024path",
-            "name": "path",
+            "fqsen": "\\Src\\Init\\AppIni\u003A\u003Aparse_ini_file_multi\u0028\u0029",
+            "name": "parse_ini_file_multi",
             "summary": "",
-            "url": "classes/Src-Init-AppIni.html#property_path"
-        },                {
-            "fqsen": "\\Src\\Init\\AppIni\u003A\u003A\u0024ini",
-            "name": "ini",
-            "summary": "",
-            "url": "classes/Src-Init-AppIni.html#property_ini"
+            "url": "classes/Src-Init-AppIni.html#method_parse_ini_file_multi"
         },                {
             "fqsen": "\\ROOT_PATH",
             "name": "ROOT_PATH",
@@ -256,6 +296,86 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html#constant_VIEWS_PATH"
         },                {
+            "fqsen": "\\INI_PATH",
+            "name": "INI_PATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_INI_PATH"
+        },                {
+            "fqsen": "\\DBPASS",
+            "name": "DBPASS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBPASS"
+        },                {
+            "fqsen": "\\DBHOST",
+            "name": "DBHOST",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBHOST"
+        },                {
+            "fqsen": "\\DBNAME",
+            "name": "DBNAME",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBNAME"
+        },                {
+            "fqsen": "\\DBUSER",
+            "name": "DBUSER",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBUSER"
+        },                {
+            "fqsen": "\\DBPORT",
+            "name": "DBPORT",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBPORT"
+        },                {
+            "fqsen": "\\DBPERSISTENT",
+            "name": "DBPERSISTENT",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBPERSISTENT"
+        },                {
+            "fqsen": "\\DBLOGINATTEMPTS",
+            "name": "DBLOGINATTEMPTS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DBLOGINATTEMPTS"
+        },                {
+            "fqsen": "\\EXPIRETIME",
+            "name": "EXPIRETIME",
+            "summary": "",
+            "url": "namespaces/default.html#constant_EXPIRETIME"
+        },                {
+            "fqsen": "\\VERSION",
+            "name": "VERSION",
+            "summary": "",
+            "url": "namespaces/default.html#constant_VERSION"
+        },                {
+            "fqsen": "\\PATH",
+            "name": "PATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_PATH"
+        },                {
+            "fqsen": "\\APIPATH",
+            "name": "APIPATH",
+            "summary": "",
+            "url": "namespaces/default.html#constant_APIPATH"
+        },                {
+            "fqsen": "\\DEVMODE",
+            "name": "DEVMODE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_DEVMODE"
+        },                {
+            "fqsen": "\\MAILADDRESS",
+            "name": "MAILADDRESS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_MAILADDRESS"
+        },                {
+            "fqsen": "\\LOGINATTEMPTS",
+            "name": "LOGINATTEMPTS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_LOGINATTEMPTS"
+        },                {
+            "fqsen": "\\SECURE",
+            "name": "SECURE",
+            "summary": "",
+            "url": "namespaces/default.html#constant_SECURE"
+        },                {
             "fqsen": "\\Src\\Init\\DEV",
             "name": "DEV",
             "summary": "",
@@ -266,10 +386,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/src-init.html#constant_PRODUCTION"
         },                {
-            "fqsen": "\\Src\\Init\\development_mode",
-            "name": "development_mode",
+            "fqsen": "\\Src\\Init\\ENVIRONMENT",
+            "name": "ENVIRONMENT",
             "summary": "",
-            "url": "namespaces/src-init.html#constant_development_mode"
+            "url": "namespaces/src-init.html#constant_ENVIRONMENT"
         },                {
             "fqsen": "\\Src\\Init\\Config",
             "name": "Config",
@@ -280,6 +400,11 @@ Search.appendIndex(
             "name": "init",
             "summary": "",
             "url": "classes/Src-Init-Config.html#method_init"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetVersion\u0028\u0029",
+            "name": "getVersion",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getVersion"
         },                {
             "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBName\u0028\u0029",
             "name": "getDBName",
@@ -295,6 +420,11 @@ Search.appendIndex(
             "name": "getDBUser",
             "summary": "",
             "url": "classes/Src-Init-Config.html#method_getDBUser"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AgetMaxLoginAttemptsPerHour\u0028\u0029",
+            "name": "getMaxLoginAttemptsPerHour",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_getMaxLoginAttemptsPerHour"
         },                {
             "fqsen": "\\Src\\Init\\Config\u003A\u003AgetDBPass\u0028\u0029",
             "name": "getDBPass",
@@ -336,6 +466,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-Init-Config.html#method_setDevelopmentMode"
         },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetVersion\u0028\u0029",
+            "name": "setVersion",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setVersion"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003AsetMaxLoginAttemptsPerHour\u0028\u0029",
+            "name": "setMaxLoginAttemptsPerHour",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#method_setMaxLoginAttemptsPerHour"
+        },                {
             "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024DBNAME",
             "name": "DBNAME",
             "summary": "",
@@ -376,6 +516,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-Init-Config.html#property_DEVELOPMENT_MODE"
         },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024VERSION",
+            "name": "VERSION",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_VERSION"
+        },                {
+            "fqsen": "\\Src\\Init\\Config\u003A\u003A\u0024LOGIN_ATTEMPTS",
+            "name": "LOGIN_ATTEMPTS",
+            "summary": "",
+            "url": "classes/Src-Init-Config.html#property_LOGIN_ATTEMPTS"
+        },                {
             "fqsen": "\\Src\\Init\\DotEnv",
             "name": "DotEnv",
             "summary": "Short\u0020DotEnv\u0020Description",
@@ -401,6 +551,16 @@ Search.appendIndex(
             "summary": "Short\u0020Description",
             "url": "namespaces/src-init.html#function_initLogger"
         },                {
+            "fqsen": "\\PAGEDESCRIPTION",
+            "name": "PAGEDESCRIPTION",
+            "summary": "",
+            "url": "namespaces/default.html#constant_PAGEDESCRIPTION"
+        },                {
+            "fqsen": "\\BREADCRUMBS",
+            "name": "BREADCRUMBS",
+            "summary": "",
+            "url": "namespaces/default.html#constant_BREADCRUMBS"
+        },                {
             "fqsen": "\\Src\\App\\Controllers\\StaticPages",
             "name": "StaticPages",
             "summary": "Short\u0020StaticPages\u0020Description",
@@ -411,6 +571,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-App-Controllers-StaticPages.html#method___construct"
         },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPages\u003A\u003AgetTypes\u0028\u0029",
+            "name": "getTypes",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPages.html#method_getTypes"
+        },                {
             "fqsen": "\\Src\\App\\Controllers\\StaticPages\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "",
@@ -420,6 +585,11 @@ Search.appendIndex(
             "name": "login",
             "summary": "",
             "url": "classes/Src-App-Controllers-StaticPages.html#method_login"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\StaticPages\u003A\u003Alogout\u0028\u0029",
+            "name": "logout",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-StaticPages.html#method_logout"
         },                {
             "fqsen": "\\Src\\Exception\\ViewException",
             "name": "ViewException",
@@ -446,10 +616,20 @@ Search.appendIndex(
             "summary": "Short\u0020Config\u0020Description",
             "url": "classes/Src-Logger-Log.html"
         },                {
+            "fqsen": "\\Src\\Logger\\Log\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Src-Logger-Log.html#method___construct"
+        },                {
             "fqsen": "\\Src\\Logger\\Log\u003A\u003Ainit\u0028\u0029",
             "name": "init",
             "summary": "",
             "url": "classes/Src-Logger-Log.html#method_init"
+        },                {
+            "fqsen": "\\Src\\Logger\\Log\u003A\u003Aaccess\u0028\u0029",
+            "name": "access",
+            "summary": "",
+            "url": "classes/Src-Logger-Log.html#method_access"
         },                {
             "fqsen": "\\Src\\Logger\\Log\u003A\u003Atrace\u0028\u0029",
             "name": "trace",
@@ -636,15 +816,25 @@ Search.appendIndex(
             "summary": "edit",
             "url": "classes/Src-App-Controllers-Provider.html#method_edit"
         },                {
-            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003AserveEdit\u0028\u0029",
-            "name": "serveEdit",
+            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003AserveGet\u0028\u0029",
+            "name": "serveGet",
             "summary": "",
-            "url": "classes/Src-App-Controllers-Provider.html#method_serveEdit"
+            "url": "classes/Src-App-Controllers-Provider.html#method_serveGet"
         },                {
-            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003AserveNew\u0028\u0029",
-            "name": "serveNew",
+            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003Aautocomplete\u0028\u0029",
+            "name": "autocomplete",
             "summary": "",
-            "url": "classes/Src-App-Controllers-Provider.html#method_serveNew"
+            "url": "classes/Src-App-Controllers-Provider.html#method_autocomplete"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-Provider.html#method_format"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\Provider\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-Provider.html#property_data"
         },                {
             "fqsen": "\\Src\\App\\Controllers\\User",
             "name": "User",
@@ -656,10 +846,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Src-App-Controllers-User.html#method___construct"
         },                {
+            "fqsen": "\\Src\\App\\Controllers\\User\u003A\u003Aget_products_by_user\u0028\u0029",
+            "name": "get_products_by_user",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-User.html#method_get_products_by_user"
+        },                {
+            "fqsen": "\\Src\\App\\Controllers\\User\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "",
+            "url": "classes/Src-App-Controllers-User.html#method_login"
+        },                {
             "fqsen": "\\Src\\App\\Models\\CompanyModel",
             "name": "CompanyModel",
-            "summary": "Short\u0020CompanyModel\u0020Description",
+            "summary": "Short\u0020Company\u0020Description",
             "url": "classes/Src-App-Models-CompanyModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CompanyModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-CompanyModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CompanyModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-CompanyModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CompanyModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-CompanyModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CompanyModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-CompanyModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CompanyModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-CompanyModel.html#property_dbFields"
         },                {
             "fqsen": "\\Src\\App\\Models\\CustomerModel",
             "name": "CustomerModel",
@@ -676,10 +901,645 @@ Search.appendIndex(
             "summary": "Gets\u0020provider\u0028s\u0029\u0020by\u0020id",
             "url": "classes/Src-App-Models-ProviderModel.html#method_get"
         },                {
+            "fqsen": "\\Src\\App\\Models\\ProviderModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProviderModel.html#method_getOne"
+        },                {
             "fqsen": "\\Src\\App\\Models\\ProviderModel\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
             "url": "classes/Src-App-Models-ProviderModel.html#property_data"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel",
+            "name": "AddressTypesModel",
+            "summary": "Short\u0020AddressTypes\u0020Description",
+            "url": "classes/Src-App-Models-AddressTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-AddressTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-AddressTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-AddressTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-AddressTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AddressTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-AddressTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel",
+            "name": "CategoryModel",
+            "summary": "Short\u0020Category\u0020Description",
+            "url": "classes/Src-App-Models-CategoryModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoryModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoryModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoryModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoryModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoryModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoryModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel",
+            "name": "ContactTypesModel",
+            "summary": "Short\u0020ContactTypes\u0020Description",
+            "url": "classes/Src-App-Models-ContactTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-ContactTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-ContactTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-ContactTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-ContactTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ContactTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-ContactTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel",
+            "name": "AirportTypesModel",
+            "summary": "Short\u0020AirportTypes\u0020Description",
+            "url": "classes/Src-App-Models-AirportTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-AirportTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-AirportTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-AirportTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-AirportTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\AirportTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-AirportTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel",
+            "name": "CategoriesRatingsTypesModel",
+            "summary": "Short\u0020CategoriesRatingsTypes\u0020Description",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CategoriesRatingsTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-CategoriesRatingsTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel",
+            "name": "ColorSchemeModel",
+            "summary": "Short\u0020ColorScheme\u0020Description",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ColorSchemeModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-ColorSchemeModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel",
+            "name": "CountryModel",
+            "summary": "Short\u0020Country\u0020Description",
+            "url": "classes/Src-App-Models-CountryModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-CountryModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-CountryModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-CountryModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-CountryModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CountryModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-CountryModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel",
+            "name": "CurrencyModel",
+            "summary": "Short\u0020Currency\u0020Description",
+            "url": "classes/Src-App-Models-CurrencyModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-CurrencyModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-CurrencyModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-CurrencyModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-CurrencyModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\CurrencyModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-CurrencyModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel",
+            "name": "LocationTypesModel",
+            "summary": "Short\u0020LocationTypes\u0020Description",
+            "url": "classes/Src-App-Models-LocationTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-LocationTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-LocationTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-LocationTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-LocationTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\LocationTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-LocationTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel",
+            "name": "MenuModel",
+            "summary": "Short\u0020Menu\u0020Description",
+            "url": "classes/Src-App-Models-MenuModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-MenuModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-MenuModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-MenuModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-MenuModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MenuModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-MenuModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel",
+            "name": "MessageTypesModel",
+            "summary": "Short\u0020MessageTypes\u0020Description",
+            "url": "classes/Src-App-Models-MessageTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-MessageTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-MessageTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-MessageTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-MessageTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\MessageTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-MessageTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel",
+            "name": "PageModel",
+            "summary": "Short\u0020Page\u0020Description",
+            "url": "classes/Src-App-Models-PageModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-PageModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-PageModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-PageModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-PageModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PageModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-PageModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel",
+            "name": "PricingStrategyTypesModel",
+            "summary": "Short\u0020PricingStrategyTypes\u0020Description",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\PricingStrategyTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-PricingStrategyTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel",
+            "name": "ProvinceModel",
+            "summary": "Short\u0020Province\u0020Description",
+            "url": "classes/Src-App-Models-ProvinceModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvinceModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvinceModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvinceModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvinceModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\ProvinceModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-ProvinceModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel",
+            "name": "RatingTypesModel",
+            "summary": "Short\u0020RatingTypes\u0020Description",
+            "url": "classes/Src-App-Models-RatingTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-RatingTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-RatingTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-RatingTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-RatingTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RatingTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-RatingTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel",
+            "name": "RoleModel",
+            "summary": "Short\u0020Role\u0020Description",
+            "url": "classes/Src-App-Models-RoleModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-RoleModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-RoleModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-RoleModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-RoleModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\RoleModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-RoleModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel",
+            "name": "SalesTypesModel",
+            "summary": "Short\u0020SalesTypes\u0020Description",
+            "url": "classes/Src-App-Models-SalesTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-SalesTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-SalesTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-SalesTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-SalesTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\SalesTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-SalesTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel",
+            "name": "StageModel",
+            "summary": "Short\u0020Stage\u0020Description",
+            "url": "classes/Src-App-Models-StageModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-StageModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-StageModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-StageModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-StageModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StageModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-StageModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel",
+            "name": "StatusTypesModel",
+            "summary": "Short\u0020StatusTypes\u0020Description",
+            "url": "classes/Src-App-Models-StatusTypesModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-StatusTypesModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-StatusTypesModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-StatusTypesModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-StatusTypesModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\StatusTypesModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-StatusTypesModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel",
+            "name": "UserModel",
+            "summary": "Short\u0020User\u0020Description",
+            "url": "classes/Src-App-Models-UserModel.html"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_get"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003AgetOne\u0028\u0029",
+            "name": "getOne",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_getOne"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_update"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003AgetOneByEmail\u0028\u0029",
+            "name": "getOneByEmail",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_getOneByEmail"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003AgetLoginAttemptsById\u0028\u0029",
+            "name": "getLoginAttemptsById",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_getLoginAttemptsById"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003AinsertLoginAttempt\u0028\u0029",
+            "name": "insertLoginAttempt",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_insertLoginAttempt"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003AgetPasswordById\u0028\u0029",
+            "name": "getPasswordById",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#method_getPasswordById"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003A\u0024dbTable",
+            "name": "dbTable",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#property_dbTable"
+        },                {
+            "fqsen": "\\Src\\App\\Models\\UserModel\u003A\u003A\u0024dbFields",
+            "name": "dbFields",
+            "summary": "",
+            "url": "classes/Src-App-Models-UserModel.html#property_dbFields"
+        },                {
+            "fqsen": "\\sec_session_start\u0028\u0029",
+            "name": "sec_session_start",
+            "summary": "",
+            "url": "namespaces/default.html#function_sec_session_start"
+        },                {
+            "fqsen": "\\esc_url\u0028\u0029",
+            "name": "esc_url",
+            "summary": "",
+            "url": "namespaces/default.html#function_esc_url"
         },                {
             "fqsen": "\\",
             "name": "\\",

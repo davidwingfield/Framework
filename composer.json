@@ -34,7 +34,8 @@
         "ext-curl": "*",
         "ext-openssl": "*",
         "apache/log4php": "2.3.0",
-        "thingengineer/mysqli-database-class": "dev-master"
+        "thingengineer/mysqli-database-class": "dev-master",
+        "ext-readline": "*"
     },
     "autoload": {
         "psr-4": {

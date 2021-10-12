@@ -21,6 +21,7 @@
         protected static $EXPIRETIME;
         protected static $DEVELOPMENT_MODE;
         protected static $VERSION;
+        protected static $LOGIN_ATTEMPTS;
 
         /**
          * @var boolean Show or hide error messages on screen
@@ -37,6 +38,7 @@
             self::setDBPassword(DBPASS);
             self::setDevelopmentMode(DEVMODE);
             self::setVersion(VERSION);
+            self::setMaxLoginAttemptsPerHour(LOGINATTEMPTS);
         }
 
         public static function getVersion()
@@ -57,6 +59,11 @@
         public static function getDBUser()
         {
             return self::$DBUSER;
+        }
+
+        public static function getMaxLoginAttemptsPerHour()
+        {
+            return self::$LOGIN_ATTEMPTS;
         }
 
         public static function getDBPass()
@@ -116,6 +123,13 @@
         {
             if (!is_null($version)) {
                 self::$VERSION = $version;
+            }
+        }
+
+        private static function setMaxLoginAttemptsPerHour($attempts = null)
+        {
+            if (!is_null($attempts)) {
+                self::$LOGIN_ATTEMPTS = $attempts;
             }
         }
 

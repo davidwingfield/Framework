@@ -68,7 +68,7 @@
          *
          * @return Router
          */
-        public static function load($files = [])
+        public static function load(array $files = [])
         {
             $instance = new static();
 

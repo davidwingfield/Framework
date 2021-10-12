@@ -7,11 +7,14 @@
      * @package            Application\App
      * @subpackage         Views
      */
+
+    use Src\App\Middlewares\Auth;
+
     $page_data = [];
     if (isset($data)) {
         $page_data = $data;
-
     }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -6,3 +6,5 @@
 10/06/2021 22:22:33.082 WARN  [IMAGE] tyesy [C:\wamp64\www\mockups\src\Logger\Log.php:88][IP:::1]
 10/06/2021 22:24:13.405 WARN  [IMAGE] tyesy [C:\wamp64\www\mockups\src\Logger\Log.php:88][IP:::1]
 10/06/2021 22:24:28.637 WARN  [IMAGE] tyesy [C:\wamp64\www\mockups\src\Logger\Log.php:88][IP:::1]
+10/12/2021 14:31:12.783 WARN  [IMAGE] IMAGE_LOGGER [C:\wamp64\www\mockups\src\Init\logger_config.php:178][IP:::1]
+10/12/2021 14:33:28.136 [main:3972] [WARN] [IP:::1] [C:\wamp64\www\mockups\src\Init\logger_config.php:173] IMAGE_LOGGER

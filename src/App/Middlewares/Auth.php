@@ -4,6 +4,9 @@
 
     use \Firebase\JWT\JWT;
     use \Firebase\JWT\JWK;
+    use Src\App\Models\UserModel;
+    use Src\Init\Config;
+    use Src\Logger\Log;
 
     /**
      * Short Auth Description
@@ -16,14 +19,46 @@
     class Auth
     {
 
+        /**
+         * @return bool
+         */
         public static function logged_in(): bool
         {
-            return true;
+            if (isset($_SESSION["user_id"], $_SESSION["username"], $_SESSION["login_string"])) {
+                $user_id = (int)$_SESSION["user_id"];
+                $login_string = $_SESSION["login_string"];
+                $user_browser = $_SERVER["HTTP_USER_AGENT"];
+                $user = UserModel::getPasswordById((int)$user_id);
+                if ($user) {
+                    $password = $user["pass"];
+                    $login_check = hash("sha512", $password . $user_browser);
+                    if ($login_check == $login_string) {
+                        /** Logged In */
+                        if (!defined("FNAME")) {
+                            define("FNAME", $_SESSION["name_first"]);
+                        }
 
+                        if (!defined("LNAME")) {
+                            define("LNAME", $_SESSION["name_last"]);
+                        }
+
+                        return true;
+                    } else {
+                        /** Not Logged In */
+                        return false;
+                    }
+                }
+
+            }
+
+            /** Not Logged In */
+            return false;
         }
 
         public static function authenticate($methodName): bool
         {
+            return true;
+            $tokenParts = [];
             // extract the token from the headers
             if (!isset($_SERVER['HTTP_AUTHORIZATION'])) {
                 return false;
@@ -181,6 +216,27 @@
                 '',
             ], base64_encode($text)
             );
+        }
+
+        public static function checkBrute(int $id): bool
+        {
+            if ($id && intval($id) > 0) {
+                $attempts = UserModel::getLoginAttemptsById($id);
+                if (intval($attempts) > Config::getMaxLoginAttemptsPerHour()) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static function insertBrute(int $id)
+        {
+            if ($id && intval($id) > 0) {
+                return UserModel::insertLoginAttempt($id);
+            }
+
+            return null;
         }
 
     }

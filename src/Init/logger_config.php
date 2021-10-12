@@ -14,11 +14,8 @@
      */
     function initLogger()
     {
-        if (isset($_SERVER["REMOTE_ADDR"])) {
-            LoggerMDC::put("ip", $_SERVER["REMOTE_ADDR"]);
-        }
 
-        Logger::configure(array(
+        return array(
             //////
             "rootLogger" => array(
                 "appenders" => array("default"),
@@ -34,6 +31,11 @@
                 "ACCESS" => array(
                     "level" => "trace",
                     "appenders" => array("access"),
+                ),
+                //////
+                "MYSQL" => array(
+                    "level" => "trace",
+                    "appenders" => array("mysql"),
                 ),
                 //////
                 "DEBUG" => array(
@@ -71,6 +73,22 @@
                     ),
                 ),
                 //////
+                "mysql" => array(
+                    "class" => "LoggerAppenderRollingFile",
+                    "layout" => array(
+                        "class" => "LoggerLayoutPattern",
+                        "params" => array(
+                            "conversionPattern" => "%d{m/d/Y H:i:s.u} [%method:%pid] [%p] [IP:%X{ip}] [%F:%L] %m%n",
+                        ),
+                    ),
+                    "params" => array(
+                        "file" => $_SERVER["DOCUMENT_ROOT"] . "/var/logs/mysql.log",
+                        "maxBackupIndex" => 3,
+                        "maxFileSize" => "2MB",
+                        "compress" => true,
+                    ),
+                ),
+                //////
                 "access" => array(
                     "class" => "LoggerAppenderRollingFile",
                     "layout" => array(
@@ -92,7 +110,7 @@
                     "layout" => array(
                         "class" => "LoggerLayoutPattern",
                         "params" => array(
-                            "conversionPattern" => "%d{m/d/Y H:i:s.u} %-5p [%c] %m [%F:%L][IP:%X{ip}]%n",
+                            "conversionPattern" => "%d{m/d/Y H:i:s.u} [%method:%pid] [%p] [IP:%X{ip}] [%F:%L] %m%n",
                         ),
                     ),
                     "params" => array(
@@ -102,11 +120,11 @@
                 ),
                 //////
                 "batch" => array(
-                    "class" => 'LoggerAppenderFile',
+                    "class" => "LoggerAppenderFile",
                     "layout" => array(
                         "class" => "LoggerLayoutPattern",
                         "params" => array(
-                            "conversionPattern" => "%d{m/d/Y H:i:s.u} [%-5p] [%F:%L] [%method] %m%n",
+                            "conversionPattern" => "%d{m/d/Y H:i:s.u} [%method:%pid] [%p] [IP:%X{ip}] [%F:%L] %m%n",
                         ),
                     ),
                     "params" => array(
@@ -120,7 +138,8 @@
                     "layout" => array(
                         "class" => "LoggerLayoutPattern",
                         "params" => array(
-                            "conversionPattern" => "%d{m/d/Y H:i:s} [%c] [IP:%X{ip}] [%F:%L] [%method:%pid] %m%n",
+                            "conversionPattern" => "%d{m/d/Y H:i:s.u} [%method:%pid] [%p] [IP:%X{ip}] [%F:%L] %m%n"
+                            //"conversionPattern" => "%d{m/d/Y H:i:s} [%c] [IP:%X{ip}] [%F:%L] [%method:%pid] %m%n",
                         ),
                     ),
                     "params" => array(
@@ -132,22 +151,30 @@
                 ),
                 //////
             ),
-        ));
+        );
 
-        $MAIN_API_FILE_LOGGER = null;
-
-        $MAIN_API_FILE_LOGGER = Logger::getLogger("MAIN");
-        $ACCESS_LOGGER = Logger::getLogger("ACCESS");
-        $DEBUG_LOGGER = Logger::getLogger("DEBUG");
-        $IMAGE_LOGGER = Logger::getLogger("IMAGE");
-        $BATCH_LOGGER = Logger::getLogger("BATCH");
-        /*
-        $MAIN_API_FILE_LOGGER->warn("Access");
-        $DEBUG_LOGGER->warn("Access");
-        $IMAGE_LOGGER->warn("Access");
-        $BATCH_LOGGER->warn("Access");
-        $ACCESS_LOGGER->warn("Access");
-        //*/
     }
 
-    initLogger();
+    if (isset($_SERVER["REMOTE_ADDR"])) {
+        LoggerMDC::put("ip", $_SERVER["REMOTE_ADDR"]);
+    }
+
+    Logger::configure(initLogger());
+    // ----
+    $EVENT_LOGGER = Logger::getLogger("MAIN");
+    $ACCESS_LOGGER = Logger::getLogger("ACCESS");
+    $DEBUG_LOGGER = Logger::getLogger("DEBUG");
+    $IMAGE_LOGGER = Logger::getLogger("IMAGE");
+    $BATCH_LOGGER = Logger::getLogger("BATCH");
+    $MYSQL_LOGGER = Logger::getLogger("BATCH");
+    // ----
+    /*
+    $EVENT_LOGGER->warn("Access");
+    $DEBUG_LOGGER->warn("DEBUG_LOGGER");
+    $IMAGE_LOGGER->warn("IMAGE_LOGGER");
+    $BATCH_LOGGER->warn("BATCH_LOGGER");
+    $ACCESS_LOGGER->warn("ACCESS_LOGGER");
+    $MYSQL_LOGGER->warn("MYSQL_LOGGER");
+    //*/
+
+

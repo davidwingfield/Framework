@@ -9,21 +9,18 @@
 
     namespace Src\Init;
 
+    require_once("vendor/autoload.php");
+
+    session_start();
+    
     use Src\App\Middlewares\Auth;
     use Src\Core\Request;
     use Src\Core\Router;
     use Src\Exception\ErrorHandler;
-    use Src\Logger\Log;
     use Src\Core\Controller;
     use Src\Core\Model;
     use Src\Core\View;
-
-    require_once("vendor/autoload.php");
-
-    define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"]);
-    define("ROUTES_PATH", ROOT_PATH . "/src/App/Routes");
-    define("VIEWS_PATH", ROOT_PATH . "/src/App/Views");
-    define("INI_PATH", ROOT_PATH . "/app.ini");
+    use Src\Logger\Log;
 
     include_once(__DIR__ . "/logger_config.php");
 
@@ -45,6 +42,7 @@
     define("APIPATH", $ini["application"]["api_path"]);
     define("DEVMODE", $ini["application"]["development_mode"]);
     define("MAILADDRESS", $ini["application"]["email"]);
+    define("LOGINATTEMPTS", $ini["database"]["db_loginattempts"]);
 
     const DEV = 0;
     const PRODUCTION = 1;
@@ -52,15 +50,20 @@
     #development_mode : DEV / PRODUCTION
     const ENVIRONMENT = DEV;
 
-    ////
+    include_once(__DIR__ . "/functions.php");
+
+    //sec_session_start();
+
     Config::init();
-    Log::init();
     Controller::init();
     AppIni::init($ini);
     Model::init();
     View::init();
-    ////
+    // ----
+    Log::clear();
+
     $ErrorHandler = new ErrorHandler();
+
     set_error_handler(array(
         $ErrorHandler,
         "handleError",
@@ -77,13 +80,25 @@
     ])::direct(Request::uri(), Request::method());
 
     if (isset($route_params["controller"], $route_params["action"])) {
-        if (!Auth::logged_in()) {
-            header("HTTP/1.1 401 Unauthorized");
-            exit("Unauthorized");
-        }
-
         $controller = $route_params["controller"];
         $action = $route_params["action"];
+
+        if (Request::src()) {//api call
+
+            if (!Auth::authenticate($route_params["action"])) {
+                header("HTTP/1.1 401 Unauthorized");
+                exit("Unauthorized");
+            }
+
+        } else {
+
+            if (!Auth::logged_in() && Request::uri() !== "login" && Request::uri() !== "logout") {
+                header("Location: /login");
+                exit;
+            }
+
+        }
+
         $controller->$action($route_params["params"]);
     }
 

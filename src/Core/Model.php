@@ -22,6 +22,7 @@
 
         public static function init()
         {
+            
             if (self::$db === null) {
                 self::$db = new MysqliDb(Config::getDBHost(), Config::getDBUser(), Config::getDBPass(), Config::getDBName());
             }

@@ -1,11 +1,26 @@
-<main id="main">
+<?php
 
+    use Src\App\Middlewares\Auth;
+
+    $loggedIn = Auth::logged_in();
+
+    if (!defined("PAGEDESCRIPTION")) {
+        define("PAGEDESCRIPTION", "");
+    }
+    if (!defined("BREADCRUMBS")) {
+        define("BREADCRUMBS", "");
+    }
+
+?>
+
+<main id="main" class=" m-0 p-0">
     <?php
-        if (defined("MAIN")) {
-            include MAIN;
+        if ($loggedIn) {
+            include_once(__DIR__ . "/page/page.phtml");
         } else {
-            echo "<p>No</p>";
+            if (defined("MAIN")) {
+                include_once(MAIN);
+            }
         }
     ?>
-
 </main>

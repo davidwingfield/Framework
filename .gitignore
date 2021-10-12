@@ -4,3 +4,7 @@ src/phpDocumentor.phar
 src/.phpdoc/
 var/logs/
 .idea/
+/bin/objectGenerator/controllers/
+/bin/objectGenerator/models/
+/bin/objectGenerator/scripts/
+/site_assets/node_modules/

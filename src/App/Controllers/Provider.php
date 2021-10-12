@@ -3,10 +3,8 @@
     namespace Src\App\Controllers;
 
     use Exception;
-    use Src\App\Models\AddressTypesModel;
-    use Src\App\Models\CategoryModel;
+    use Src\App\Controllers\StaticPages;
     use Src\App\Models\CompanyModel;
-    use Src\App\Models\ContactTypesModel;
     use Src\App\Models\ProviderModel;
     use Src\Core\Controller;
     use Src\Core\View;
@@ -35,8 +33,17 @@
          */
         public static function index(): void
         {
-            self::$data = array(
-                "types" => [],
+            $page_id = 5;
+            // ----
+            define("PAGE_TITLE", "Login");
+            define("PAGE_HEADING", "Login");
+            define("PAGE_SUBHEADING", "Enter Loging Details");
+            define("PARENT_MENU", 0);
+            define("PARENT_SUB_MENU", 0);
+
+            define("BREAD_CRUMBS", "");
+            $data = array(
+                "types" => StaticPages::getTypes(),
                 "provider" => ProviderModel::get(),
                 "company" => [],
                 "location" => [],
@@ -59,21 +66,50 @@
          */
         public static function edit(array $params = [])
         {
-            $provider_id = null;
-            $providers = [];
             if (isset($params["provider_id"])) {
                 $provider_id = (int)$params["provider_id"];
             }
+            // ----
+            $page_id = 6;
+            // ----
+            define("PAGE_TITLE", "Login");
+            define("PAGE_HEADING", "Login");
+            define("PAGE_SUBHEADING", "Enter Loging Details");
+            define("PARENT_MENU", 0);
+            define("PARENT_SUB_MENU", 0);
 
-            $provider_detail = ProviderModel::getOne($provider_id);
-
+            define("BREAD_CRUMBS", "");
+            // ----
+            $provider_id = null;
+            $providers = [];
             $address_detail = [];
             $company_detail = [];
-
+            $provider_detail = ProviderModel::getOne($provider_id);
             if (isset($provider_detail["company_id"])) {
                 $company_id = (int)$provider_detail["company_id"];
-                $company_detail = CompanyModel::getOne($company_id);
+                if (isset($company_id) && intval($company_id) > 0) {
+                    $company_detail = CompanyModel::getOne($company_id);
+
+                }
+
             }
+
+            // ----
+            $data = array(
+                "types" => StaticPages::getTypes(),
+                "provider_detail" => $provider_detail,
+                "company_detail" => $company_detail,
+                "address_detail" => $address_detail,
+            );
+            $breadcrumbs = "
+                    <li class='breadcrumb-item'>
+                        <a href='/providers'>Providers</a>
+                    </li>
+                    <li class='breadcrumb-item'>
+                        $provider_id
+                    </li>";
+
+            $provider_detail = ProviderModel::getOne($provider_id);
 
             $providers[] = array(
                 "provider_detail" => $provider_detail,
@@ -81,28 +117,22 @@
                 "address_detail" => $address_detail,
             );
 
-            self::$data = [
-                "types" => array(
-                    "contact_types" => ContactTypesModel::get(),
-                    "address_types" => AddressTypesModel::get(),
-                    "category" => CategoryModel::get(),
-                ),
-                "provider_detail" => $provider_detail,
-                "company_detail" => $company_detail,
-                "address_detail" => $address_detail,
-            ];
-
             View::render_template("providers/edit", self::$data);
         }
 
         public static function serveGet()
         {
-            View::render_json($_GET);
+            var_dump("tert", 1);
         }
 
-        public static function autocorrect()
+        public static function autocomplete()
         {
             var_dump("tert", 1);
+        }
+
+        private static function format($providers = [])
+        {
+
         }
 
     }
